@@ -1,9 +1,13 @@
-import Image from "next/image";
+//
+import { Container } from "@mui/material";
+
+// Pages
+import HomePage from "./pages/Home/HomePage";
 
 export default function Home() {
   return (
-    <main>
-      <h1>hello</h1>
-    </main>
+    <Container>
+      <HomePage />
+    </Container>
   );
 }
