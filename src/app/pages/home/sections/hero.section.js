@@ -5,9 +5,14 @@ function HeroSection() {
   return (
     <div className="container mx-auto h-screen flex flex-col justify-center items-center">
       <div className="flex flex-row items-center">
-        <Image width="233" height="201" src="assets/svgs/foodcare_logo.svg" />
+        <Image
+          width="233"
+          height="201"
+          alt="foodCare"
+          src="assets/svgs/foodcare_logo.svg"
+        />
         <div className="ml-[100px]">
-          <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-primary md:text-5xl lg:text-6xl">
+          <h1 className="mb-4 text-4xl font-poppins font-extrabold leading-none tracking-tight text-primary md:text-5xl lg:text-6xl">
             with Food, we Care
           </h1>
           <p className="mb-6 text-lg font-normal text-black">
