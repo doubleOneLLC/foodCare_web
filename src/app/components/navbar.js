@@ -12,20 +12,20 @@ function Navbar() {
         <div class="flex md:order-2">
           <button
             type="button"
-            class="text-primary font-medium rounded-lg border-primary border-[1px] text-sm px-4 py-2 mx-2 text-center mr-3 md:mr-0"
+            class="text-primary font-medium rounded-[99px] border-primary border-[1px] text-sm px-[35px] py-2 mx-2 text-center mr-3 md:mr-0"
           >
             Sign Up
           </button>
           <button
             type="button"
-            class="text-white bg-primary font-medium rounded-lg text-sm px-4 py-2 mx-2 text-center mr-3 md:mr-0"
+            class="text-white bg-primary font-medium rounded-[99px] text-sm px-[35px] py-2 mx-2 text-center mr-3 md:mr-0"
           >
             Sign In
           </button>
-          <button
+          {/* <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-[99px] md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-sticky"
             aria-expanded="false"
           >
@@ -45,13 +45,13 @@ function Navbar() {
                 d="M1 1h15M1 7h15M1 13h15"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
         <div
           class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-[99px] bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
             <li>
               <a
                 href="#"

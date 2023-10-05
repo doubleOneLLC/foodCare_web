@@ -3,16 +3,14 @@
 // React
 import React from "react";
 
-// Utils
-import useIsMobile from "@/app/utils/isMobile.hook";
 import Navbar from "@/app/components/navbar";
+import HeroSection from "./sections/hero.section";
 
 function HomePage() {
-  const isMobile = useIsMobile();
-
   return (
     <>
       <Navbar />
+      <HeroSection />
     </>
   );
 }
