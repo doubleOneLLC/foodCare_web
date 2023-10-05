@@ -3,7 +3,7 @@ import React from "react";
 
 function DonateItem() {
   return (
-    <div class="w-[250px] bg-white rounded-2xl shadow">
+    <div class="w-[250px] bg-white rounded-2xl shadow-md">
       <a href="#">
         <Image
           class="rounded-2xl object-cover h-[134px] w-[250px]"

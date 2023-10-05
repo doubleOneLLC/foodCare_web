@@ -1,3 +1,4 @@
+import { poppins } from "@/constant/fonts";
 import Image from "next/image";
 import React from "react";
 
@@ -12,14 +13,16 @@ function HeroSection() {
           src="assets/svgs/foodcare_logo.svg"
         />
         <div className="ml-[100px]">
-          <h1 className="mb-4 text-4xl font-poppins font-extrabold leading-none tracking-tight text-primary md:text-5xl lg:text-6xl">
+          <h1
+            className={`mb-4 text-4xl font-extrabold leading-none tracking-tight text-primary md:text-5xl lg:text-6xl ${poppins.className}`}
+          >
             with Food, we Care
           </h1>
           <p className="mb-6 text-lg font-normal text-black">
             Anak Indonesia Harus Merdeka Kelaparan
           </p>
           <a
-            href="#"
+            href="/about"
             className="inline-flex items-center justify-center px-[37px] py-[13px] text-xl font-extrabold text-center text-white bg-primary rounded-[99px]"
           >
             Mulai Donasi
@@ -50,9 +53,11 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="flex flex-col bg-white justify-center items-center h-[277px] w-[85%] my-[-150px] rounded-[42px] shadow-xl px-24">
+      <div className="flex flex-col bg-white justify-center items-center w-[85%] my-[-150px] rounded-[42px] shadow-xl p-[52px]">
         <div className="flex flex-row items-center">
-          <h5 className="text-4xl font-extrabold leading-none tracking-tight text-primary">
+          <h5
+            className={`text-4xl font-extrabold leading-none tracking-tight text-primary ${poppins.className}`}
+          >
             Anak Indonesia Harus Merdeka Kelaparan
           </h5>
           <p className="text-black text-base font-medium pl-16">

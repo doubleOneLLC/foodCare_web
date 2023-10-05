@@ -1,3 +1,4 @@
+import { poppins } from "@/constant/fonts";
 import React from "react";
 
 function MotivateSection() {
@@ -10,7 +11,9 @@ function MotivateSection() {
         akar dari masalah kelaparan, dengan menerapkan program donasi makanan
         kepada yang membutuhkan.
       </p>
-      <h1 className="text-white text-right text-5xl font-extrabold">
+      <h1
+        className={`text-white text-right text-5xl font-extrabold ${poppins.className}`}
+      >
         Sedikit memberi banyak membantu
       </h1>
     </div>

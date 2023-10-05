@@ -1,4 +1,4 @@
-import DonateItem from "@/app/components/donate-item";
+import DonateItem from "@/components/donate-item";
 import React from "react";
 
 function DonateSection() {
