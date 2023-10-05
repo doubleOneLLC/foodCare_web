@@ -48,22 +48,22 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <a href="/" className="hover:underline">
                     Beranda
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <a href="/donate" className="hover:underline">
                     Donasi
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <a href="/about" className="hover:underline">
                     Tentang Kami
                   </a>
                 </li>
                 <li>
-                  <a href="" className="hover:underline">
+                  <a href="/faq" className="hover:underline">
                     FAQ
                   </a>
                 </li>
@@ -75,7 +75,10 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="" className="hover:underline ">
+                  <a
+                    href="https://instagram.com/infinite.learning"
+                    className="hover:underline "
+                  >
                     Instagram
                   </a>
                 </li>
@@ -97,19 +100,17 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a className="hover:underline">
                     Jl. Raya Tlogomas No.246, Jawa Timur 65144, Indonesia
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a className="hover:underline">
                     (62) 851 550 17757 ( Quick Response )
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    doubleone@xyzscape.xyz
-                  </a>
+                  <a className="hover:underline">doubleone@xyzscape.xyz</a>
                 </li>
               </ul>
             </div>
@@ -125,10 +126,7 @@ export default function Footer() {
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
+            <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -144,10 +142,7 @@ export default function Footer() {
               </svg>
               <span className="sr-only">Facebook page</span>
             </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
+            <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -159,10 +154,7 @@ export default function Footer() {
               </svg>
               <span className="sr-only">Discord community</span>
             </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
+            <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -178,10 +170,7 @@ export default function Footer() {
               </svg>
               <span className="sr-only">Twitter page</span>
             </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
+            <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -197,10 +186,7 @@ export default function Footer() {
               </svg>
               <span className="sr-only">GitHub account</span>
             </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
+            <a className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"

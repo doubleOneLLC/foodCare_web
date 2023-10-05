@@ -22,7 +22,7 @@ function HeroSection() {
             Anak Indonesia Harus Merdeka Kelaparan
           </p>
           <a
-            href="/about"
+            href="/donate"
             className="inline-flex items-center justify-center px-[37px] py-[13px] text-xl font-extrabold text-center text-white bg-primary rounded-[99px]"
           >
             Mulai Donasi
