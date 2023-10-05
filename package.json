@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@iconify/react": "^4.1.1",
     "autoprefixer": "10.4.15",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "flowbite": "^1.8.1",
     "flowbite-react": "^0.6.4",
+    "iconify": "^1.4.0",
     "lodash.debounce": "^4.0.8",
     "next": "13.4.19",
     "postcss": "8.4.29",
