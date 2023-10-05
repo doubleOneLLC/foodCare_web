@@ -50,7 +50,7 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="flex flex-col bg-white justify-center items-center h-[277px] w-[85%] my-[-150px] rounded-[42px] shadow-xl px-16">
+      <div className="flex flex-col bg-white justify-center items-center h-[277px] w-[85%] my-[-150px] rounded-[42px] shadow-xl px-24">
         <div className="flex flex-row items-center">
           <h5 className="text-4xl font-extrabold leading-none tracking-tight text-primary">
             Anak Indonesia Harus Merdeka Kelaparan
