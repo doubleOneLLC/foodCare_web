@@ -18,7 +18,7 @@ export default function Footer() {
               </span>
             </a>
             <a>
-              Food Care merupakan situs web yang dibuat khusus untuk berdonasi
+              foodCare merupakan situs web yang dibuat khusus untuk berdonasi
               makanan atau uang bagi masyarakat yang memiliki kemampuan
               finansial terbatas.
             </a>
