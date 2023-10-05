@@ -50,13 +50,13 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="flex flex-col bg-white justify-center items-center h-[277px] w-[85%] my-[-150px] rounded-[42px] shadow-xl px-24">
+      <div className="flex flex-col bg-white justify-center items-center h-[277px] w-[85%] my-[-150px] rounded-[42px] shadow-xl px-16">
         <div className="flex flex-row items-center">
           <h5 className="text-4xl font-extrabold leading-none tracking-tight text-primary">
             Anak Indonesia Harus Merdeka Kelaparan
           </h5>
           <p className="text-black text-base font-medium pl-16">
-            Food Care merupakan situs web yang dibuat khusus untuk berdonasi
+            foodCare merupakan situs web yang dibuat khusus untuk berdonasi
             makanan atau uang bagi masyarakat yang memiliki kemampuan finansial
             terbatas. Food care bekerja untuk membantu para donatur yang ingin
             menyumbangkan makanan berlebih mereka secara sukarela kepada
