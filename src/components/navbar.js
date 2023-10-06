@@ -1,7 +1,7 @@
 import { poppins } from "@/constant/fonts";
 import React from "react";
 
-function Navbar() {
+function Navbar({ active }) {
   return (
     <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -35,7 +35,6 @@ function Navbar() {
               <a
                 href="/"
                 className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-primary md:p-0"
-                aria-current="page"
               >
                 Beranda
               </a>

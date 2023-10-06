@@ -1,6 +1,5 @@
 "use client";
 
-// React
 import React from "react";
 
 import HeroSection from "./sections/hero.section";
