@@ -17,13 +17,13 @@ function Navbar({ active }) {
             type="button"
             className="text-primary font-medium rounded-[99px] border-primary border-[1px] text-sm px-[35px] py-2 mx-2 text-center mr-3 md:mr-0"
           >
-            Sign Up
+            Daftar
           </button>
           <button
             type="button"
             className="text-white bg-primary font-medium rounded-[99px] text-sm px-[35px] py-2 mx-2 text-center mr-3 md:mr-0"
           >
-            Sign In
+            Masuk
           </button>
         </div>
         <div
