@@ -1,4 +1,4 @@
-import { poppins } from "@/constant/fonts";
+import { jakarta } from "@/constant/fonts";
 import Image from "next/image";
 import React from "react";
 
@@ -14,7 +14,7 @@ function HeroSection() {
         />
         <div className="ml-[100px]">
           <h1
-            className={`mb-4 text-4xl font-extrabold leading-none tracking-tight text-primary md:text-5xl lg:text-6xl ${poppins.className}`}
+            className={`mb-4 text-4xl font-extrabold leading-none tracking-tight text-primary md:text-5xl lg:text-6xl ${jakarta.className}`}
           >
             with Food, we Care
           </h1>
@@ -56,7 +56,7 @@ function HeroSection() {
       <div className="flex flex-col bg-white justify-center items-center w-[85%] my-[-150px] rounded-[42px] shadow-xl p-[52px]">
         <div className="flex flex-row items-center">
           <h5
-            className={`text-4xl font-extrabold leading-none tracking-tight text-primary ${poppins.className}`}
+            className={`text-4xl font-extrabold leading-none tracking-tight text-primary ${jakarta.className}`}
           >
             Anak Indonesia Harus Merdeka Kelaparan
           </h5>

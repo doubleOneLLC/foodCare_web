@@ -1,4 +1,4 @@
-import { poppins } from "@/constant/fonts";
+import { jakarta } from "@/constant/fonts";
 import Image from "next/image";
 import React from "react";
 
@@ -7,7 +7,7 @@ function AboutHeader() {
     <div className="flex flex-row bg-gradient-to-r from-amber-500 to-white justify-between items-center w-[100%] my-[32px] px-[62px] py-[42px] pb-[100px] mt-[92px] rounded-[42px]">
       <div>
         <h1
-          className={`text-white text-4xl font-extrabold mb-2 ${poppins.className}`}
+          className={`text-white text-4xl font-extrabold mb-2 ${jakarta.className}`}
         >
           Tentang foodCare
         </h1>
