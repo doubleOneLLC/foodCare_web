@@ -1,4 +1,4 @@
-import { poppins } from "@/constant/fonts";
+import { jakarta } from "@/constant/fonts";
 import React from "react";
 
 function Navbar({ active }) {
@@ -7,7 +7,7 @@ function Navbar({ active }) {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center">
           <span
-            className={`self-center text-2xl font-semibold whitespace-nowrap text-primary ${poppins.className}`}
+            className={`self-center text-2xl font-semibold whitespace-nowrap text-primary ${jakarta.className}`}
           >
             foodCare
           </span>

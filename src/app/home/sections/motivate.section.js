@@ -1,4 +1,4 @@
-import { poppins } from "@/constant/fonts";
+import { jakarta } from "@/constant/fonts";
 import React from "react";
 
 function MotivateSection() {
@@ -12,7 +12,7 @@ function MotivateSection() {
         kepada yang membutuhkan.
       </p>
       <h1
-        className={`text-white text-right text-5xl font-extrabold ${poppins.className}`}
+        className={`text-white text-right text-5xl font-extrabold ${jakarta.className}`}
       >
         Sedikit memberi banyak membantu
       </h1>
