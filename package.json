@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@iconify/react": "^4.1.1",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "autoprefixer": "10.4.15",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
