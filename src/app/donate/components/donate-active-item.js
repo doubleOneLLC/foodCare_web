@@ -7,7 +7,7 @@ function DonateActiveItem({ img, program, summary }) {
       <div className="flex flex-row p-[22px] align-middle items-center">
         <div className="h-[67px] w-[67px] rounded-full bg-black overflow-hidden">
           <Image
-            className="object-cover w-full h-full"
+            className="object-cover h-[67px] w-[67px]"
             width="67"
             height="67"
             src={img}

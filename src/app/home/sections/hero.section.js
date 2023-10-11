@@ -15,7 +15,7 @@ function HeroSection() {
         />
         <div className="md:ml-[100px]">
           <h1
-            className={`mb-4 text-4xl font-extrabold leading-none tracking-tight text-primary text-[82px] pt-8 pr-20 md:pt-0 md:text-5xl ${jakarta.className}`}
+            className={`mb-4 text-4xl font-extrabold leading-none tracking-tight text-primary text-[72px] pt-8 pr-20 md:pt-0 md:text-5xl ${jakarta.className}`}
           >
             with Food, we Care
           </h1>
