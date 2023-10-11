@@ -4,7 +4,7 @@ import React from "react";
 
 function AboutHeader() {
   return (
-    <div className="flex flex-row bg-gradient-to-r from-amber-500 to-white justify-between items-center w-[100%] my-[32px] px-[62px] py-[42px] pb-[100px] mt-[92px] rounded-[42px]">
+    <div className="flex flex-col-reverse md:flex-row bg-primary md:justify-between items-center w-[100%] my-[32px] px-[32px] md:px-[62px] py-[42px] pb-[100px] pt-[92px] mr-[18px] md:mx-0 rounded-[42px]">
       <div>
         <h1
           className={`text-white text-4xl font-extrabold mb-2 ${jakarta.className}`}

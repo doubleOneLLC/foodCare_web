@@ -23,7 +23,7 @@ function TeamSection() {
   return (
     <div className="my-[62px]">
       <h1 className="font-bold text-4xl text-center">Tim Kita</h1>
-      <div className="grid grid-flow-col py-6 px-6 gap-6 overflow-x-scroll">
+      <div className="grid md:grid-flow-col py-6 px-6 gap-6 md:overflow-x-scroll">
         {teamData.map((item) => (
           <AboutTeamItem
             key={item.id}
