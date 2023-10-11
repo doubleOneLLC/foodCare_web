@@ -1,6 +1,6 @@
-import Accordion from "@/components/accordion";
-import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
+import Accordion from '@/components/accordion';
+import Footer from '@/components/footer';
+import Navbar from '@/components/navbar';
 
 export default function Home() {
   return (
@@ -9,9 +9,7 @@ export default function Home() {
       <div className="container max-w-screen-xl mt-32 mb-8 ">
         <div className="gap-12 grid md:grid-cols-2">
           <div>
-            <h1 className="font-bold text-3xl px-4 mb-4">
-              Soal sering ditanya
-            </h1>
+            <h1 className="font-bold text-3xl px-4 mb-4">Soal sering ditanya</h1>
             <Accordion
               title="Apa itu donasi makanan?"
               summary="Donasi makanan adalah tindakan sukarela di mana individu, kelompok, atau organisasi menyumbangkan makanan kepada mereka yang membutuhkan. Makanan yang didonasikan dapat berasal dari sisa makanan, surplus, atau makanan baru yang disiapkan khusus untuk tujuan donasi."
@@ -28,15 +26,10 @@ export default function Home() {
             />
           </div>
           <div>
-            <h1 className="font-bold text-3xl  mb-4">
-              Masih belum menemukan jawaban?
-            </h1>
+            <h1 className="font-bold text-3xl  mb-4">Masih belum menemukan jawaban?</h1>
             <div className="grid gap-4">
               <div>
-                <label
-                  for="full_name"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                >
+                <label for="full_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                   Nama lengkap
                 </label>
                 <input
@@ -48,10 +41,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <label
-                  for="email"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                >
+                <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                   Email
                 </label>
                 <input
@@ -63,10 +53,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <label
-                  for="subject"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                >
+                <label for="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                   Subjek
                 </label>
                 <input
@@ -78,10 +65,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <label
-                  for="message"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                >
+                <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                   Pesan
                 </label>
                 <input
@@ -92,10 +76,7 @@ export default function Home() {
                   required
                 />
               </div>
-              <button
-                type="button"
-                className="text-white font-medium rounded-[99px] bg-primary text-sm px-[35px] py-4 text-center"
-              >
+              <button type="button" className="text-white font-medium rounded-[99px] bg-primary text-sm px-[35px] py-4 text-center">
                 Kirim Sekarang
               </button>
             </div>
