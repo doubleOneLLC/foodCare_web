@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -52,24 +53,24 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Beranda
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/donate" className="hover:underline">
+                  <Link href="/donate" className="hover:underline">
                     Donasi
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/about" className="hover:underline">
+                  <Link href="/about" className="hover:underline">
                     Tentang Kami
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/faq" className="hover:underline">
+                  <Link href="/faq" className="hover:underline">
                     FAQ
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
