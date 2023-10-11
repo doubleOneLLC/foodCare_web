@@ -4,7 +4,7 @@ import React from "react";
 function Navbar({ active }) {
   return (
     <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 px-[24px]">
         <a href="/" className="flex items-center">
           <span
             className={`self-center text-2xl font-semibold whitespace-nowrap text-primary ${jakarta.className}`}
@@ -15,13 +15,13 @@ function Navbar({ active }) {
         <div className="flex md:order-2">
           <button
             type="button"
-            className="text-primary font-medium rounded-[99px] border-primary border-[1px] text-sm px-[35px] py-2 mx-2 text-center mr-3 md:mr-0"
+            className="hidden md:visible text-primary font-medium rounded-[99px] border-primary border-[1px] text-sm px-[35px] py-2 mx-2 text-center mr-3 md:mr-0"
           >
             Daftar
           </button>
           <button
             type="button"
-            className="text-white bg-primary font-medium rounded-[99px] text-sm px-[35px] py-2 mx-2 text-center mr-3 md:mr-0"
+            className="text-white bg-primary font-medium rounded-[99px] text-sm px-[35px] py-2 mx-2 text-center"
           >
             Masuk
           </button>
