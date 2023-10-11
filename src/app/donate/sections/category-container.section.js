@@ -3,10 +3,10 @@ import React from "react";
 
 function CategoryContainer() {
   return (
-    <div className="pr-[32px]">
+    <div className="md:pr-[32px]">
       <h1 className="font-bold text-3xl px-4 mb-4">Pilihan foodCare</h1>
       <div>
-        <div className="grid grid-cols-3 py-6 gap-6">
+        <div className="grid md:grid-cols-3 py-6 gap-6">
           <DonateItem />
           <DonateItem />
           <DonateItem />
@@ -14,7 +14,7 @@ function CategoryContainer() {
       </div>
       <h1 className="font-bold text-3xl px-4 mt-4">Donasi Makanan</h1>
       <div>
-        <div className="grid grid-cols-3 py-6 gap-6">
+        <div className="grid md:grid-cols-3 py-6 gap-6">
           <DonateItem />
           <DonateItem />
           <DonateItem />

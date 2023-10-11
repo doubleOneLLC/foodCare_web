@@ -25,7 +25,7 @@ function Home() {
     <>
       <Navbar />
       <HeaderCategory />
-      <div className="container flex flex-row max-w-screen-xl my-16">
+      <div className="container flex flex-col-reverse md:flex-row max-w-screen-xl my-16 px-[32px]">
         <CategoryContainer />
         <div>
           <h1 className="font-bold text-3xl px-4 mb-4">Lacak donasi</h1>

@@ -4,7 +4,7 @@ import React from "react";
 
 function DonateItem() {
   return (
-    <div className="w-[250px] bg-white rounded-2xl shadow-md">
+    <div className="min-w-[250px] bg-white rounded-2xl shadow-md">
       <Link href="/donate/money">
         <Image
           className="rounded-2xl object-cover h-[134px] w-[250px]"

@@ -3,7 +3,7 @@ import React from "react";
 
 function DonateActiveItem({ img, program, summary }) {
   return (
-    <div className="w-[410px] bg-white shadow-xl rounded-[32px] mb-6">
+    <div className="w-[100%] bg-white shadow-xl rounded-[32px] mb-6">
       <div className="flex flex-row p-[22px] align-middle items-center">
         <div className="h-[67px] w-[67px] rounded-full bg-black overflow-hidden">
           <Image
