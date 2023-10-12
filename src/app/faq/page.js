@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="container max-w-screen-xl mt-32 mb-8 ">
+      <div className="container max-w-screen-xl mt-32 mb-8 px-8">
         <div className="gap-12 grid md:grid-cols-2">
           <div>
-            <h1 className="font-bold text-3xl px-4 mb-4">Soal sering ditanya</h1>
+            <h1 className="font-bold text-3xl mb-4">Pertanyaan umum</h1>
             <Accordion
               title="Apa itu donasi makanan?"
               summary="Donasi makanan adalah tindakan sukarela di mana individu, kelompok, atau organisasi menyumbangkan makanan kepada mereka yang membutuhkan. Makanan yang didonasikan dapat berasal dari sisa makanan, surplus, atau makanan baru yang disiapkan khusus untuk tujuan donasi."
@@ -26,7 +26,9 @@ export default function Home() {
             />
           </div>
           <div>
-            <h1 className="font-bold text-3xl  mb-4">Masih belum menemukan jawaban?</h1>
+            <h1 className="font-bold text-3xl mb-8">
+              Masih belum menemukan jawaban?
+            </h1>
             <div className="grid gap-4">
               <div>
                 <label for="full_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -36,7 +38,7 @@ export default function Home() {
                   type="text"
                   id="full_name"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-                  placeholder="xyzuan"
+                  placeholder="Masukkan nama lengkap"
                   required
                 />
               </div>
@@ -48,7 +50,7 @@ export default function Home() {
                   type="text"
                   id="email"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-                  placeholder="example@xyzscape.xyz"
+                  placeholder="Masukkan email"
                   required
                 />
               </div>
@@ -60,7 +62,7 @@ export default function Home() {
                   type="text"
                   id="subject"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-                  placeholder="Subject"
+                  placeholder="Subjek masalah anda"
                   required
                 />
               </div>
@@ -68,10 +70,10 @@ export default function Home() {
                 <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                   Pesan
                 </label>
-                <input
+                <textarea
                   type="text"
                   id="message"
-                  className="block w-full p-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
+                  className="block w-full resize-none p-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
                   placeholder="Masukkan pesanmu disini"
                   required
                 />
