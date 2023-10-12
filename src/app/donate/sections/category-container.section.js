@@ -16,7 +16,7 @@ function CategoryContainer({ activeCategory }) {
     <div className="md:pr-[32px]">
       <h1 className="font-bold text-3xl px-4 mb-4">Pilihan foodCare</h1>
       <div>
-        <div className="grid md:grid-cols-3 py-6 gap-6">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 py-6 gap-6">
           {itemList
             .filter((item) => item.verified)
             .map((item) =>
@@ -46,7 +46,7 @@ function CategoryContainer({ activeCategory }) {
       </div>
       <h1 className="font-bold text-3xl px-4 mt-4">{activeCategory}</h1>
       <div>
-        <div className="grid md:grid-cols-3 py-6 gap-6">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 py-6 gap-6">
           {itemList.map((item) =>
             isFood ? (
               <DonateFoodItem
