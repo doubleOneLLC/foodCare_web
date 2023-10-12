@@ -5,5 +5,6 @@ const apiBase = "https://api.xyzuan.my.id/foodcare";
 const endStatic = "/static/public";
 const endTeam = "/team";
 const endFood = "/food";
+const endMoney = "/money";
 
-export { apiBase, endStatic, endTeam, endFood };
+export { apiBase, endStatic, endTeam, endFood, endMoney };

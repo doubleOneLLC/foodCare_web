@@ -1,4 +1,4 @@
-const { donateFoodList } = require("@/models/donate_db");
+const { donateFoodList, donateMoneyList } = require("@/models/donate_db");
 
 function convertToCSV(data) {
   const header = Object.keys(data[0]).join(",");
@@ -6,5 +6,5 @@ function convertToCSV(data) {
   return `${header}\n${rows.join("\n")}`;
 }
 
-const csvData = convertToCSV(donateFoodList);
+const csvData = convertToCSV(donateMoneyList);
 console.log(csvData);
