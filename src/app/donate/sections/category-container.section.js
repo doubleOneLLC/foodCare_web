@@ -28,7 +28,10 @@ function CategoryContainer({ activeCategory }) {
                   instance={item.instance}
                   acc={item.acc}
                   target={item.target}
+                  dest={item.target}
                   verified={item.verified}
+                  dateCreated={item.dateCreated}
+                  dateExpired={item.dateExpired}
                 />
               ) : (
                 <DonateMoneyItem
@@ -56,7 +59,10 @@ function CategoryContainer({ activeCategory }) {
                 instance={item.instance}
                 acc={item.acc}
                 target={item.target}
+                dest={item.target}
                 verified={item.verified}
+                dateCreated={item.dateCreated}
+                dateExpired={item.dateExpired}
               />
             ) : (
               <DonateMoneyItem

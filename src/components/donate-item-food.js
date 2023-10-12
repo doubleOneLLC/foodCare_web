@@ -1,10 +1,22 @@
-import { jakarta } from "@/constant/fonts";
-import { calculatePercentage, convertToRupiah } from "@/utils/donateCalc.util";
+import {
+  calculateDaysRemaining,
+  calculateTotalDays,
+} from "@/utils/dateCalc.util";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-function DonateFoodItem({ img, program, instance, acc, target, verified }) {
+function DonateFoodItem({
+  img,
+  program,
+  instance,
+  acc,
+  target,
+  dest,
+  verified,
+  dateCreated,
+  dateExpired,
+}) {
   return (
     <Link href="/donate/money">
       <div className="min-w-[250px] bg-white rounded-2xl shadow-md">
@@ -62,7 +74,7 @@ function DonateFoodItem({ img, program, instance, acc, target, verified }) {
                   fill="#23BF20"
                 />
               </svg>
-              <p className="font-semibold text-sm text-gray-400">900m</p>
+              <p className="font-semibold text-sm text-gray-400">{dest}m</p>
             </div>
             <div className="flex items-center">
               <svg
@@ -93,7 +105,10 @@ function DonateFoodItem({ img, program, instance, acc, target, verified }) {
                 />
               </svg>
               <p className={`text-sm font-semibold text-gray-400`}>
-                <span className="text-primary">25</span> / 30 hari
+                <span className="text-primary">
+                  {calculateDaysRemaining(dateExpired)}
+                </span>{" "}
+                / {calculateTotalDays(dateCreated, dateExpired)} hari
               </p>
             </div>
           </div>
