@@ -16,7 +16,7 @@ function DonateActiveItem({ img, program, summary }) {
         </div>
         <div className="px-4">
           <h2 className="font-bold text-base">{program}</h2>
-          <p className="font-medium text-lg text-gray-500">{summary}</p>
+          <p className="font-medium text-sm text-gray-500">{summary}</p>
         </div>
       </div>
     </div>
