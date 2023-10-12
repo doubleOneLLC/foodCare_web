@@ -6,7 +6,7 @@ import Target from '../components/target';
 
 function DetailsDonate() {
     return (
-        <div className="flex flex-col h-fit w-[382px] rounded-[42px] shadow-md items-center p-[28px] gap-4">
+        <div className="flex flex-col h-fit w-[382px] rounded-[42px] shadow-lg items-center p-[28px] gap-4">
             <div className="w-[330px] h-[128px] rounded-2xl overflow-hidden">
                 <Image
                     className="object-cover w-full h-full"
