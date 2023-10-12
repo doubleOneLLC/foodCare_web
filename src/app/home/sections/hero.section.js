@@ -15,7 +15,7 @@ function HeroSection() {
         />
         <div className="md:ml-[100px]">
           <h1
-            className={`mb-4 text-4xl font-extrabold leading-none tracking-tight text-primary text-[72px] pt-8 pr-20 md:pt-0 md:text-5xl ${jakarta.className}`}
+            className={`mb-4 text-4xl font-extrabold leading-none tracking-tight text-primary text-[72px] pt-8 pr-20 md:pt-0 md:text-5xl `}
           >
             with Food, we Care
           </h1>
@@ -57,7 +57,7 @@ function HeroSection() {
       <div className="flex flex-col bg-white justify-center items-center mx-[24px] md:mx-[42px] mt-[-150px] rounded-[42px] shadow-xl p-[32px] py-[42px] md:p-[52px]">
         <div className="flex flex-col md:flex-row items-center">
           <h5
-            className={`text-4xl font-extrabold leading-none tracking-tight text-primary ${jakarta.className}`}
+            className={`text-4xl font-extrabold leading-none tracking-tight text-primary `}
           >
             Anak Indonesia Harus Merdeka Kelaparan
           </h5>

@@ -1,4 +1,4 @@
-import DonateItem from "@/components/donate-item";
+import DonateItem from "@/components/donate-item-money";
 import { donateMoneyList } from "@/models/donate_db";
 import React from "react";
 

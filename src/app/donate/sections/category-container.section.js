@@ -1,8 +1,10 @@
-import DonateItem from "@/components/donate-item";
+import DonateFoodItem from "@/components/donate-item-food";
+import DonateMoneyItem from "@/components/donate-item-money";
 import { donateFoodList, donateMoneyList } from "@/models/donate_db";
 import React from "react";
 
 function CategoryContainer({ activeCategory }) {
+  const isFood = activeCategory === "Donasi Makanan";
   let itemList;
   if (activeCategory === "Donasi Makanan") {
     itemList = donateFoodList;
@@ -17,8 +19,37 @@ function CategoryContainer({ activeCategory }) {
         <div className="grid md:grid-cols-3 py-6 gap-6">
           {itemList
             .filter((item) => item.verified)
-            .map((item) => (
-              <DonateItem
+            .map((item) =>
+              isFood ? (
+                <DonateFoodItem
+                  key={item.id}
+                  img={item.img}
+                  program={item.program}
+                  instance={item.instance}
+                  acc={item.acc}
+                  target={item.target}
+                  verified={item.verified}
+                />
+              ) : (
+                <DonateMoneyItem
+                  key={item.id}
+                  img={item.img}
+                  program={item.program}
+                  instance={item.instance}
+                  acc={item.acc}
+                  target={item.target}
+                  verified={item.verified}
+                />
+              )
+            )}
+        </div>
+      </div>
+      <h1 className="font-bold text-3xl px-4 mt-4">{activeCategory}</h1>
+      <div>
+        <div className="grid md:grid-cols-3 py-6 gap-6">
+          {itemList.map((item) =>
+            isFood ? (
+              <DonateFoodItem
                 key={item.id}
                 img={item.img}
                 program={item.program}
@@ -27,23 +58,18 @@ function CategoryContainer({ activeCategory }) {
                 target={item.target}
                 verified={item.verified}
               />
-            ))}
-        </div>
-      </div>
-      <h1 className="font-bold text-3xl px-4 mt-4">{activeCategory}</h1>
-      <div>
-        <div className="grid md:grid-cols-3 py-6 gap-6">
-          {itemList.map((item) => (
-            <DonateItem
-              key={item.id}
-              img={item.img}
-              program={item.program}
-              instance={item.instance}
-              acc={item.acc}
-              target={item.target}
-              verified={item.verified}
-            />
-          ))}
+            ) : (
+              <DonateMoneyItem
+                key={item.id}
+                img={item.img}
+                program={item.program}
+                instance={item.instance}
+                acc={item.acc}
+                target={item.target}
+                verified={item.verified}
+              />
+            )
+          )}
         </div>
       </div>
     </div>

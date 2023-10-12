@@ -1,4 +1,4 @@
-import { inter } from "@/constant/fonts";
+import { inter, jakarta } from "@/constant/fonts";
 import "./globals.css";
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={jakarta.className}>{children}</body>
     </html>
   );
 }

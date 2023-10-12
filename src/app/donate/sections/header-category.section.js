@@ -1,8 +1,9 @@
 import React from "react";
 import DonateCategory from "../components/donate-category";
 import Image from "next/image";
+import Link from "next/link";
 
-function HeaderCategory({ setActiveCategory }) {
+function HeaderCategory({ setActiveCategory, activeCategory }) {
   const handleCategoryClick = (categoryName) => {
     setActiveCategory(categoryName);
   };
@@ -30,19 +31,22 @@ function HeaderCategory({ setActiveCategory }) {
           <DonateCategory
             logo="/assets/svgs/donate-food.svg"
             name="Donasi Makanan"
+            isActive={activeCategory === "Donasi Makanan"}
             onCategoryClick={handleCategoryClick}
           />
           <DonateCategory
             logo="/assets/svgs/donate-uang.svg"
             name="Donasi Uang"
+            isActive={activeCategory === "Donasi Uang"}
             onCategoryClick={handleCategoryClick}
           />
-          <DonateCategory
-            logo="/assets/svgs/donate-create.svg"
-            name="Buat Donasi"
-            link="donate/create"
-            onCategoryClick={handleCategoryClick}
-          />
+          <Link href="/donate/create">
+            <DonateCategory
+              logo="/assets/svgs/donate-create.svg"
+              name="Buat Donasi"
+              onCategoryClick={handleCategoryClick}
+            />
+          </Link>
         </div>
       </div>
     </div>

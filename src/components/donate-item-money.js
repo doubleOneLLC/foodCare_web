@@ -1,10 +1,9 @@
-import Avatar from "@/app/donate/money/components/avatar";
 import { calculatePercentage, convertToRupiah } from "@/utils/donateCalc.util";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-function DonateItem({ img, program, instance, acc, target, verified }) {
+function DonateMoneyItem({ img, program, instance, acc, target, verified }) {
   return (
     <Link href="/donate/money">
       <div className="min-w-[250px] bg-white rounded-2xl shadow-md">
@@ -57,9 +56,12 @@ function DonateItem({ img, program, instance, acc, target, verified }) {
           </div>
           <div className="flex flex-row">
             <div className="flex flex-grow">
-              <p className="font-medium">Target: {convertToRupiah(target)},-</p>
+              <p className="font-semibold text-sm text-gray-600">
+                Target:{" "}
+                <span className="text-black">{convertToRupiah(target)},-</span>
+              </p>
             </div>
-            <p className="text-[#00A352] font-medium">
+            <p className="text-[#00A352] font-semibold text-sm">
               {calculatePercentage(acc, target)}%
             </p>
           </div>
@@ -69,4 +71,4 @@ function DonateItem({ img, program, instance, acc, target, verified }) {
   );
 }
 
-export default DonateItem;
+export default DonateMoneyItem;

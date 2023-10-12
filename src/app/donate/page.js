@@ -10,12 +10,15 @@ import { activeDonate } from "@/models/user_db";
 import { donateCategories } from "@/constant/donate";
 
 function Home() {
-  const [activeCategory, setActiveCategory] = useState("Donasi Uang");
+  const [activeCategory, setActiveCategory] = useState("Donasi Makanan");
 
   return (
     <>
       <Navbar />
-      <HeaderCategory setActiveCategory={setActiveCategory} />
+      <HeaderCategory
+        setActiveCategory={setActiveCategory}
+        activeCategory={activeCategory}
+      />
       <div className="container flex flex-col-reverse md:flex-row max-w-screen-xl my-16 px-[32px]">
         <CategoryContainer
           categories={donateCategories}

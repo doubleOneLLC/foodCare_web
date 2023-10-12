@@ -12,7 +12,7 @@ function MotivateSection() {
         kepada yang membutuhkan.
       </p>
       <h1
-        className={`text-white pb-6 md:pb-0 md:text-right text-5xl font-extrabold ${jakarta.className}`}
+        className={`text-white pb-6 md:pb-0 md:text-right text-5xl font-extrabold `}
       >
         Sedikit memberi banyak membantu
       </h1>

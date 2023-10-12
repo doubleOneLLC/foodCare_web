@@ -17,7 +17,7 @@ function Navbar({ active }) {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 px-[24px]">
         <Link href="/" className="flex items-center">
           <span
-            className={`self-center text-2xl font-semibold whitespace-nowrap text-primary ${jakarta.className}`}
+            className={`self-center text-2xl font-semibold whitespace-nowrap text-primary `}
           >
             foodCare
           </span>
