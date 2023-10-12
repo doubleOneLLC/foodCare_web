@@ -17,7 +17,13 @@ function DonateCategory({ logo, name, onCategoryClick, isActive }) {
       >
         <Image src={logo} width="38" height="38" alt={name} />
       </div>
-      <h1 className="pt-4 font-semibold text-center text-base">{name}</h1>
+      <h1
+        className={`pt-4 font-semibold text-center text-base ${
+          isActive ? "text-primary" : "text-black"
+        }`}
+      >
+        {name}
+      </h1>
     </div>
   );
 }

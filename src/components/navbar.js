@@ -63,7 +63,7 @@ function Navbar({ active }) {
             <li>
               <Link
                 href="/"
-                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-primary md:p-0"
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:hover:text-primary md:p-0"
               >
                 Beranda
               </Link>
