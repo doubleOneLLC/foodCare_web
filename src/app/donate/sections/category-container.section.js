@@ -1,13 +1,30 @@
 import DonateFoodItem from "@/components/donate-item-food";
 import DonateMoneyItem from "@/components/donate-item-money";
-import { donateFoodList, donateMoneyList } from "@/models/donate_db";
-import React from "react";
+import { apiBase, endFood } from "@/constant/api";
+import { donateMoneyList } from "@/models/donate_db";
+import React, { useEffect, useState } from "react";
 
 function CategoryContainer({ activeCategory }) {
+  const [foodData, setFoodData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(apiBase + endFood);
+        const data = await response.json();
+        setFoodData(data.data);
+      } catch (error) {
+        console.error("Error fetching food data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   const isFood = activeCategory === "Donasi Makanan";
   let itemList;
   if (activeCategory === "Donasi Makanan") {
-    itemList = donateFoodList;
+    itemList = foodData;
   } else {
     itemList = donateMoneyList;
   }
