@@ -10,10 +10,10 @@ function AboutTeamItem({ img, name, role, univ }) {
           <h5 className="mb-2 text-xl text-center font-semibold tracking-tight text-gray-900">
             {name}
           </h5>
-          <p className="mb-2 text-sm text-center font-medium text-gray-400">
+          <p className="mb-2 text-sm text-center font-medium text-gray-500">
             {role}
           </p>
-          <p className="mb-3 text-sm text-center font-medium text-gray-400">
+          <p className="mb-3 text-sm text-center font-medium text-gray-500">
             {univ}
           </p>
         </div>
