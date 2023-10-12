@@ -2,7 +2,11 @@ import React from "react";
 import DonateCategory from "../components/donate-category";
 import Image from "next/image";
 
-function HeaderCategory() {
+function HeaderCategory({ setActiveCategory }) {
+  const handleCategoryClick = (categoryName) => {
+    setActiveCategory(categoryName);
+  };
+
   return (
     <div className="container mx-auto flex flex-col justify-center items-center mt-[92px]">
       <div className="max-h-[320px] rounded-3xl bg-black overflow-hidden">
@@ -26,15 +30,18 @@ function HeaderCategory() {
           <DonateCategory
             logo="/assets/svgs/donate-food.svg"
             name="Donasi Makanan"
+            onCategoryClick={handleCategoryClick}
           />
           <DonateCategory
             logo="/assets/svgs/donate-uang.svg"
             name="Donasi Uang"
+            onCategoryClick={handleCategoryClick}
           />
           <DonateCategory
             logo="/assets/svgs/donate-create.svg"
             name="Buat Donasi"
             link="donate/create"
+            onCategoryClick={handleCategoryClick}
           />
         </div>
       </div>

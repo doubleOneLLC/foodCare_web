@@ -1,4 +1,4 @@
-export const donateFoodList = [
+export const donateMoneyList = [
   {
     id: 1,
     img: "https://images.unsplash.com/photo-1548102268-3d7dc56b01e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2012&q=80",
@@ -69,6 +69,54 @@ export const donateFoodList = [
     instance: "Baznas",
     verified: false,
     acc: "500000",
+    target: "1000000",
+  },
+];
+
+export const donateFoodList = [
+  {
+    id: 1,
+    img: "https://images.unsplash.com/photo-1548102268-3d7dc56b01e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2012&q=80",
+    program: "Donasi Makanan Desa Kami",
+    instance: "Lazizmu Batu",
+    verified: false,
+    acc: "500000",
+    target: "2000000",
+  },
+  {
+    id: 2,
+    img: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    program: "Donasi Makanan Desa Tegalgondo",
+    instance: "Yayasan Abi Berkah",
+    verified: false,
+    acc: "200000",
+    target: "2000000",
+  },
+  {
+    id: 3,
+    img: "https://images.unsplash.com/photo-1520254553641-2eed4cf2ef26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1630&q=80",
+    program: "Donasi Makanan Banjir Jakarta",
+    instance: "ACT Indonesia",
+    verified: false,
+    acc: "500000",
+    target: "8000000",
+  },
+  {
+    id: 4,
+    img: "https://images.unsplash.com/photo-1515657241610-a6b33f0f6c5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1576&q=80",
+    program: "Donasi Makanan Korban Bencana Alam",
+    instance: "Dompet Dhuafa",
+    verified: true,
+    acc: "100000",
+    target: "3000000",
+  },
+  {
+    id: 5,
+    img: "https://images.unsplash.com/photo-1595561579181-263fe6175b73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    program: "Donasi Makanan untuk Anak Yatim",
+    instance: "Yayasan Al-Azhar",
+    verified: true,
+    acc: "100000",
     target: "1000000",
   },
 ];
