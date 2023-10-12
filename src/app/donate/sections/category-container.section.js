@@ -8,17 +8,19 @@ function CategoryContainer() {
       <h1 className="font-bold text-3xl px-4 mb-4">Pilihan foodCare</h1>
       <div>
         <div className="grid md:grid-cols-3 py-6 gap-6">
-          {donateFoodList.slice(4, 7).map((item) => (
-            <DonateItem
-              key={item.id}
-              img={item.img}
-              program={item.program}
-              summary={item.summary}
-              acc={item.acc}
-              target={item.target}
-              verified="true"
-            />
-          ))}
+          {donateFoodList
+            .filter((item) => item.verified)
+            .map((item) => (
+              <DonateItem
+                key={item.id}
+                img={item.img}
+                program={item.program}
+                instance={item.instance}
+                acc={item.acc}
+                target={item.target}
+                verified={item.verified}
+              />
+            ))}
         </div>
       </div>
       <h1 className="font-bold text-3xl px-4 mt-4">Donasi Makanan</h1>
@@ -29,7 +31,7 @@ function CategoryContainer() {
               key={item.id}
               img={item.img}
               program={item.program}
-              summary={item.summary}
+              instance={item.instance}
               acc={item.acc}
               target={item.target}
             />
