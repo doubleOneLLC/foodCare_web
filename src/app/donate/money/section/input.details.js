@@ -5,7 +5,6 @@ import PaymenButton from "../components/payment-method";
 function InputDetails() {
   return (
     <div className="flex flex-col gap-6 h-[771px] w-[676px] pt-4">
-      <h1 className="text-black text-[32px] font-bold">Donasi Keuangan</h1>
       <InputNominal />
       <p className="text-black text-2xl font-medium">
         Masukkan Metode <br></br>Pembayaran

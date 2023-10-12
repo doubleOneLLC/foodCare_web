@@ -9,9 +9,12 @@ export default function MoneyDonate() {
     return (
         <>
             <Navbar />
-            <div className="container mx-auto h-screen flex flex-row justify-center gap-[78px] mt-24">
+            <div className="container mx-auto h-fit flex flex-row justify-center gap-[78px] mt-24">
                 <DetailsDonate />
+                <div>
+                <h1 className="text-black text-[32px] font-bold">Donasi Keuangan</h1>
                 <InputDetails />
+                </div>
             </div>
             <Footer />
         </>
