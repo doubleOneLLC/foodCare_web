@@ -37,7 +37,7 @@ function InputDetails() {
         placeholder="Tulis doa atau dukungan untuk penggalangan dana ini. "
       ></textarea>
       <Link href="/donate/money/status-waiting">
-        <button className="middle none center w-full h-[60px] rounded-2xl bg-[#F7921C] py-3 px-6 text-base font-semibold text-white shadow-md transition-all hover:shadow-lg hover:shadow-grey-400">
+        <button className="middle none center w-full h-[60px] rounded-[99px] bg-[#F7921C] py-3 px-6 text-base font-semibold text-white shadow-md transition-all hover:shadow-lg hover:shadow-grey-400">
           Kirim Donasi
         </button>
       </Link>
