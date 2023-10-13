@@ -1,0 +1,15 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-park-solid:fork-spoon">
+<mask id="mask0_262_1027" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="1" width="18" height="22">
+<g id="svgIDa">
+<g id="Group">
+<path id="Vector" d="M7 2V22M4 2.5V7.5C4 10 7 10 7 10C7 10 10 10 10 7.5V2.5M17 10V22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M20 6C20 8.209 18.657 10 17 10C15.343 10 14 8.209 14 6C14 3.791 15.343 2 17 2C18.657 2 20 3.791 20 6Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_262_1027)">
+<path id="Vector_3" d="M2 -1H26V23H2V-1Z" fill="white"/>
+</g>
+</g>
+</svg>
