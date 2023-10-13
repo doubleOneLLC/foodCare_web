@@ -6,8 +6,8 @@ import Target from "../components/target";
 
 function DetailsDonate() {
   return (
-    <div className="flex flex-col md:mb-6 md:w-[382px] rounded-[42px] shadow-lg p-[28px] gap-4">
-      <h1 className="md:hidden text-black text-[32px] text-start font-bold">
+    <div className="flex flex-col md:mb-6 md:w-[382px] rounded-[42px] md:shadow-lg px-[28px] gap-4">
+      <h1 className="md:hidden text-black text-[24px] text-start font-bold">
         Donasi Keuangan
       </h1>
       <div className="w-[100%] h-[128px] rounded-2xl overflow-hidden">
@@ -29,7 +29,7 @@ function DetailsDonate() {
             alt="banner"
           />
         </div>
-        <p className="text-center text-zinc-900 tx font-bold">
+        <p className="text-zinc-900 font-bold">
           Indonesia Merdeka Dari Kelaparan
         </p>
       </div>

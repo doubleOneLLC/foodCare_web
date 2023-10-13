@@ -5,8 +5,8 @@ import Link from "next/link";
 function PaymentComplete() {
   return (
     <>
-      <div className="flex flex-col gap-6 h-[100%] md:w-[38vw] justify-center items-center text-center">
-        <div className="w-[380px] h-[280]">
+      <div className="flex flex-col gap-6 h-[70vh] md:w-[38vw] justify-center items-center text-center">
+        <div className="w-[240px] md:w-[380px] md:h-[280px]">
           <Image
             className="object-cover w-fit h-fit"
             src="/assets/svgs/payment-complete.svg"

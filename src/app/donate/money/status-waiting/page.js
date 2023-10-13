@@ -13,10 +13,7 @@ export default function StatusWaiting() {
         <div className="md:inline hidden">
           <DetailsDonate />
         </div>
-        <div>
-          <h1 className="inline-block md:hidden text-black text-[32px] ml-[-8px] mt-5 mb-[82px] font-bold">
-            Donasi Keuangan
-          </h1>
+        <div className="mt-5 mb-[42px]">
           <PaymentWaiting />
         </div>
       </div>

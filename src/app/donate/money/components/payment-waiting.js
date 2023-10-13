@@ -5,7 +5,7 @@ import Link from "next/link";
 function PaymentWaiting() {
   return (
     <>
-      <div className="flex flex-col gap-6 h-[100%] md:w-[38vw] justify-center items-center">
+      <div className="flex flex-col gap-6 h-[70vh] md:w-[38vw] justify-center items-center">
         <p className=" text-2xl ">Cara Pembayaran</p>
         <p className=" text-sm text-slate-500">
           Transfer sesuai nominal di bawah ini
