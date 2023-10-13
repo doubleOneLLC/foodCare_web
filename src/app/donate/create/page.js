@@ -127,7 +127,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <button className="text-white font-medium rounded-[99px] bg-primary text-sm px-[35px] py-4 text-center">
+          <button className="text-white font-semibold rounded-[99px] bg-primary text-sm px-[35px] py-4 text-center">
             Buat Donasi
           </button>
         </div>
