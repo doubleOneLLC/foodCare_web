@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function PaymentWaiting() {
   return (
     <>
-      <div className="flex flex-col gap-6 h-[100%] w-[676px] justify-center items-center">
+      <div className="flex flex-col gap-6 h-[100%] md:w-[38vw] justify-center items-center">
         <p className=" text-2xl ">Cara Pembayaran</p>
         <p className=" text-sm text-slate-500">
           Transfer sesuai nominal di bawah ini
@@ -33,9 +34,11 @@ function PaymentWaiting() {
             anda otomatis dibatalkan oleh sistem
           </p>
         </div>
-        <button className=" mt-4 middle none center w-[332px] h-[60px] rounded-2xl bg-[#F7921C] py-3 px-6 text-base font-medium text-white shadow-md transition-all hover:shadow-lg hover:shadow-grey-400">
-          Refresh Status
-        </button>
+        <Link href="/donate/money/status-complete">
+          <button className=" mt-4 middle none center w-[332px] h-[60px] rounded-2xl bg-[#F7921C] py-3 px-6 text-base font-medium text-white shadow-md transition-all hover:shadow-lg hover:shadow-grey-400">
+            Refresh Status
+          </button>
+        </Link>
       </div>
     </>
   );

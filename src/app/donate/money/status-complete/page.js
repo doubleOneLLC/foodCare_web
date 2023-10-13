@@ -9,9 +9,13 @@ export default function StatusWaiting() {
     <>
       <Navbar />
       <div className="container mx-auto h-fit flex flex-row justify-center gap-[78px] my-24">
-        <DetailsDonate />
+        <div className="md:inline hidden">
+          <DetailsDonate />
+        </div>
         <div>
-          <h1 className="text-black text-[32px] font-bold">Donasi Keuangan</h1>
+          <h1 className="inline-block md:hidden text-black text-[32px] ml-4 mt-5 mb-[42px] font-bold">
+            Donasi Keuangan
+          </h1>
           <PaymentComplete />
         </div>
       </div>

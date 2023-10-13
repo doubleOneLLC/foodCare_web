@@ -15,28 +15,26 @@ function MoreText() {
 }
 function Description() {
   return (
-    <>
-      <div>
-        <p
-          id="description"
-          className="text-black text-sm font-normal line-clamp-5"
-        >
-          Memperingati 75 tahun kemerdekaan Republik Indonesia, bangsa ini masih
-          terus berjuang mengatasi persoalan kelaparan, khususnya pada balita
-          yang meningkat di tengah pandemi Covid-19 yang terus kian menyebar
-          keseluruh Indonesia. Oleh karena itu, campaign ini dibuat untuk
-          membantu sedikit dari balita maupun orang dewasa yang terdampak dari
-          pandemi Covid-19 ini.
-        </p>
-        <a
-          id="readMore"
-          className="text-[#F7921C] text-sm font-semibold hover:cursor-pointer"
-          onClick={MoreText}
-        >
-          baca selengkapanya...
-        </a>
-      </div>
-    </>
+    <div className="px-3">
+      <p
+        id="description"
+        className="text-black text-sm font-normal line-clamp-5 text-justify"
+      >
+        Memperingati 75 tahun kemerdekaan Republik Indonesia, bangsa ini masih
+        terus berjuang mengatasi persoalan kelaparan, khususnya pada balita yang
+        meningkat di tengah pandemi Covid-19 yang terus kian menyebar keseluruh
+        Indonesia. Oleh karena itu, campaign ini dibuat untuk membantu sedikit
+        dari balita maupun orang dewasa yang terdampak dari pandemi Covid-19
+        ini.
+      </p>
+      <a
+        id="readMore"
+        className="text-[#F7921C] text-sm font-semibold hover:cursor-pointer"
+        onClick={MoreText}
+      >
+        baca selengkapanya...
+      </a>
+    </div>
   );
 }
 
