@@ -6,10 +6,7 @@ function DonateCategory({ logo, name, onCategoryClick, isActive }) {
     onCategoryClick(name);
   };
   return (
-    <div
-      onClick={handleClick}
-      className="flex flex-col justify-center items-center"
-    >
+    <div onClick={handleClick} className="flex flex-col items-center">
       <div
         className={`h-[94px] w-[94px] ${
           isActive ? "bg-primary-4" : "bg-white"
