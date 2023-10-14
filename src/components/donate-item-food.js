@@ -18,7 +18,7 @@ function DonateFoodItem({
   dateExpired,
 }) {
   return (
-    <Link href="/donate/money">
+    <Link href="/donate/food">
       <div className="min-w-[250px] bg-white rounded-2xl shadow-md">
         <Image
           className="rounded-2xl object-cover h-[134px] w-[100%]"
