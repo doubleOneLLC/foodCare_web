@@ -1,3 +1,4 @@
+import ChatBubbles from "@/components/chat-bubbles";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
@@ -7,7 +8,7 @@ function TrackFood() {
   return (
     <>
       <Navbar />
-      <div className="container flex flex-col md:flex-row max-w-screen-xl max-h-[744px] my-16 px-[32px] mt-32">
+      <div className="container flex flex-col md:flex-row max-w-screen-xl max-h-[744px] my-16 px-[32px] mt-24">
         <div className="flex align-middle justify-center relative overflow-hidden min-w-[550px] rounded-[32px]">
           <Image
             className="object-cover"
@@ -78,90 +79,35 @@ function TrackFood() {
         </div>
 
         <div className="w-full m-[32px]">
-          <div id="header" className="bg-slate-200 p-[18px]">
-            <h1>Live chat</h1>
+          <div id="header" className="p-[18px]">
+            <h1 className="font-semibold text-2xl">Live chat</h1>
           </div>
-          <div id="chat-container" className="overflow-y-auto h-[84%]">
-            <div className="w-[245px] h-[68px] rounded-tl-none rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-[#FFE8CD]">
-              <div className="w-auto h-auto text-[13px] text-[#5D5D5D] ml-[20px] mt-[18px]">
-                Halo mas, untuk posisi nya apakah
-                <br />
-                sudah sesuai ?
-              </div>
-            </div>
-            <div className="w-[245px] h-[68px] rounded-tl-none rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-[#FFE8CD]">
-              <div className="w-auto h-auto text-[13px] text-[#5D5D5D] ml-[20px] mt-[18px]">
-                Halo mas, untuk posisi nya apakah
-                <br />
-                sudah sesuai ?
-              </div>
-            </div>
-            <div className="w-[245px] h-[68px] rounded-tl-none rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-[#FFE8CD]">
-              <div className="w-auto h-auto text-[13px] text-[#5D5D5D] ml-[20px] mt-[18px]">
-                Halo mas, untuk posisi nya apakah
-                <br />
-                sudah sesuai ?
-              </div>
-            </div>
-            <div className="w-[245px] h-[68px] rounded-tl-none rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-[#FFE8CD]">
-              <div className="w-auto h-auto text-[13px] text-[#5D5D5D] ml-[20px] mt-[18px]">
-                Halo mas, untuk posisi nya apakah
-                <br />
-                sudah sesuai ?
-              </div>
-            </div>
-            <div className="w-[245px] h-[68px] rounded-tl-none rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-[#FFE8CD]">
-              <div className="w-auto h-auto text-[13px] text-[#5D5D5D] ml-[20px] mt-[18px]">
-                Halo mas, untuk posisi nya apakah
-                <br />
-                sudah sesuai ?
-              </div>
-            </div>
-            <div className="w-[245px] h-[68px] rounded-tl-none rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-[#FFE8CD]">
-              <div className="w-auto h-auto text-[13px] text-[#5D5D5D] ml-[20px] mt-[18px]">
-                Halo mas, untuk posisi nya apakah
-                <br />
-                sudah sesuai ?
-              </div>
-            </div>
-            <div className="w-[245px] h-[68px] rounded-tl-none rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-[#FFE8CD]">
-              <div className="w-auto h-auto text-[13px] text-[#5D5D5D] ml-[20px] mt-[18px]">
-                Halo mas, untuk posisi nya apakah
-                <br />
-                sudah sesuai ?
-              </div>
-            </div>
-            <div className="w-[245px] h-[68px] rounded-tl-none rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-[#FFE8CD]">
-              <div className="w-auto h-auto text-[13px] text-[#5D5D5D] ml-[20px] mt-[18px]">
-                Halo mas, untuk posisi nya apakah
-                <br />
-                sudah sesuai ?
-              </div>
-            </div>
-            <div className="w-[245px] h-[68px] rounded-tl-none rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-[#FFE8CD]">
-              <div className="w-auto h-auto text-[13px] text-[#5D5D5D] ml-[20px] mt-[18px]">
-                Halo mas, untuk posisi nya apakah
-                <br />
-                sudah sesuai ?
-              </div>
-            </div>
-            <div className="w-[245px] h-[68px] rounded-tl-none rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-[#FFE8CD]">
-              <div className="w-auto h-auto text-[13px] text-[#5D5D5D] ml-[20px] mt-[18px]">
-                Halo mas, untuk posisi nya apakah
-                <br />
-                sudah sesuai ?
-              </div>
-            </div>
+          <div id="chat-container" className="overflow-y-auto h-[84%] px-6">
+            <ChatBubbles
+              from="in"
+              msg="Halo mas, untuk posisi nya apakah
+sudah sesuai ?"
+              time="09:15 am"
+            />
+            <ChatBubbles msg="Ya, sudah sesuai mas" time="09:20 am" />
+            <ChatBubbles
+              from="in"
+              msg="Ini untuk makanan nya dari sini ada 3 bungkus mas"
+              time="09:23 am"
+            />
+            <ChatBubbles msg="Okeh mas kalo gitu di tunggu ya" time="9:25 am" />
+            <ChatBubbles from="in" msg="Okeh siap mas otw" time="09:27 am" />
+            <ChatBubbles msg="Okeh mas hati - hati " time="9:30 am" />
           </div>
           <div id="text-input">
             <form>
               <label for="chat" class="sr-only">
-                Your message
+                Ketik pesan . . .
               </label>
-              <div class="flex items-center px-3 py-2 rounded-lg bg-gray-50 dark:bg-gray-700">
+              <div class="flex items-center px-3 py-2">
                 <button
                   type="button"
-                  class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                  class="inline-flex justify-center p-2 text-primary-3 rounded-lg cursor-pointer hover:text-primary hover:bg-gray-100"
                 >
                   <svg
                     class="w-5 h-5"
@@ -193,7 +139,7 @@ function TrackFood() {
                 </button>
                 <button
                   type="button"
-                  class="p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+                  class="p-2 text-primary-3 rounded-lg cursor-pointer hover:text-primary hover:bg-gray-100"
                 >
                   <svg
                     class="w-5 h-5"
@@ -215,12 +161,12 @@ function TrackFood() {
                 <textarea
                   id="chat"
                   rows="1"
-                  class="block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Your message..."
+                  className="mx-3 px-3 w-full resize-none  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary"
+                  placeholder="Ketik pesan ..."
                 ></textarea>
                 <button
                   type="submit"
-                  class="inline-flex justify-center p-2 text-blue-600 rounded-full cursor-pointer hover:bg-blue-100 dark:text-blue-500 dark:hover:bg-gray-600"
+                  class="inline-flex justify-center p-2 text-primary rounded-full cursor-pointer"
                 >
                   <svg
                     class="w-5 h-5 rotate-90"
