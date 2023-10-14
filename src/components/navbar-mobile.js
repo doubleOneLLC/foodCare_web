@@ -46,10 +46,12 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
           </Link>
         </li>
       </ul>
-      <div className="mx-6 border-t border-gray-300" />
-      <div className="p-[24px]">
-        <div className="flex flex-row items-center bg-primary w-[100%] p-[18px] rounded-[24px] text-white">
-          {/* <div className="bg-primary-4 rounded-full h-[48px] w-[48px] mr-4">
+      {status === "authenticated" && (
+        <>
+          <div className="mx-6 border-t border-gray-300" />
+          <div className="p-[24px]">
+            <div className="flex flex-row items-center bg-primary w-[100%] p-[18px] rounded-[24px] text-white">
+              {/* <div className="bg-primary-4 rounded-full h-[48px] w-[48px] mr-4">
             <Image
               height="62"
               width="62"
@@ -57,18 +59,20 @@ const MobileMenu = ({ isOpen, toggleMenu }) => {
               src={`${apiBase}${endStatic}/${userData.image}`}
             />
           </div> */}
-          <div className="flex-grow">
-            <h2 className="font-medium text-xl">{userData.name}</h2>
-            <p className="font-light text-gray-100">{userData.email}</p>
+              <div className="flex-grow">
+                <h2 className="font-medium text-xl">{userData.name}</h2>
+                <p className="font-light text-gray-100">{userData.email}</p>
+              </div>
+              <button
+                onClick={() => signOut()}
+                className="bg-white text-black text-sm font-medium rounded-full px-[24px] py-[8px]"
+              >
+                Sign Out
+              </button>
+            </div>
           </div>
-          <button
-            onClick={() => signOut()}
-            className="bg-white text-black text-sm font-medium rounded-full px-[24px] py-[8px]"
-          >
-            Sign Out
-          </button>
-        </div>
-      </div>
+        </>
+      )}
     </div>
   );
 };

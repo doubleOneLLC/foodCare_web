@@ -1,41 +1,44 @@
 "use client";
 
+import { apiBase, endAuth } from "@/constant/api";
 import { Icon } from "@iconify/react";
 import { signIn } from "next-auth/react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
-export const LoginForm = () => {
+export const SignUpForm = () => {
   const [loading, setLoading] = useState(false);
   const [formValues, setFormValues] = useState({
+    name: "",
     email: "",
     password: "",
   });
   const [error, setError] = useState("");
 
-  const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get("callbackUrl") || "/";
-
   const onSubmit = async (e) => {
     e.preventDefault();
-    try {
-      setLoading(true);
 
-      const res = await signIn("credentials", {
-        redirect: false,
-        email: formValues.email,
-        password: formValues.password,
-        callbackUrl,
+    try {
+      const formData = new URLSearchParams();
+      formData.append("name", formValues.name);
+      formData.append("email", formValues.email);
+      formData.append("password", formValues.password);
+
+      const response = await fetch(`${apiBase}${endAuth}/signup`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: formData,
       });
 
-      setLoading(false);
-
-      if (res?.error) {
-        setError("Invalid email or password");
-      } else {
-        window.location.href = "/";
+      if (!response.ok) {
+        setError((await response.json()).message);
+        return;
       }
+
+      signIn(undefined, { callbackUrl: "/" });
     } catch (error) {
       setLoading(false);
       setError(error);
@@ -54,6 +57,27 @@ export const LoginForm = () => {
           <p className="text-center bg-red-300 rounded-lg py-4 mb-6">{error}</p>
         )}
         <div className="grid gap-2">
+          <div className="grid gap-1">
+            <label
+              htmlFor="name"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Nama Lengkap
+            </label>
+            <input
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary block w-full p-4 "
+              id="name"
+              type="name"
+              autoCapitalize="none"
+              autoComplete="name"
+              autoCorrect="off"
+              required
+              name="name"
+              value={formValues.name}
+              onChange={handleChange}
+              placeholder="Masukkan nama lengkap"
+            />
+          </div>
           <div className="grid gap-1">
             <label
               htmlFor="email"
@@ -127,12 +151,9 @@ export const LoginForm = () => {
             disabled={loading}
           >
             {loading && (
-              <Icon
-                icon="mdi-light:spinner"
-                className="mr-2 h-4 w-4 animate-spin"
-              />
+              <Icon icon="spin" className="mr-2 h-4 w-4 animate-spin" />
             )}
-            Masuk
+            Daftar
           </button>
         </div>
       </form>

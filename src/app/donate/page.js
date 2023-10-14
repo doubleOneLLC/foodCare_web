@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import HeaderCategory from "./sections/header-category.section";
 import CategoryContainer from "./sections/category-container.section";
 import DonateActiveItem from "./components/donate-active-item";
-import { activeDonate } from "@/hooks/useUserData.hook";
+import { activeDonate } from "@/constant/dummy.data";
 
 function Home() {
   const [activeCategory, setActiveCategory] = useState("Donasi Makanan");

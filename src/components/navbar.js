@@ -3,10 +3,18 @@
 import React, { useState } from "react";
 import MobileMenu from "./navbar-mobile";
 import Link from "next/link";
-import { useSession } from "next-auth/react";
+import { signIn, signOut, useSession } from "next-auth/react";
 
 function Navbar({ active }) {
-  const { status } = useSession();
+  let userData = {
+    name: "",
+    email: "",
+  };
+
+  let { data, status } = useSession();
+  if (status === "authenticated") {
+    userData = data.user;
+  }
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -27,23 +35,39 @@ function Navbar({ active }) {
         <div className="flex md:order-2">
           {status === "unauthenticated" && (
             <div>
-              <button
-                type="button"
-                className="hidden md:inline text-primary font-medium rounded-[99px] border-primary border-[1px] text-sm px-[35px] py-2 mx-2 text-center mr-3 md:mr-0"
-              >
-                Daftar
-              </button>
-              <Link href="/auth/login">
+              <Link href="/auth/signup">
                 <button
                   type="button"
-                  className="text-white bg-primary font-medium rounded-[99px] text-sm px-[35px] py-2 mx-2 text-center"
+                  className="hidden md:inline text-primary font-medium rounded-[99px] border-primary border-[1px] text-sm px-[35px] py-2 mx-2 text-center mr-3 md:mr-0"
                 >
-                  Masuk
+                  Daftar
                 </button>
               </Link>
+
+              <button
+                type="button"
+                onClick={() => signIn()}
+                className="text-white bg-primary font-medium rounded-[99px] text-sm px-[35px] py-2 mx-2 text-center"
+              >
+                Masuk
+              </button>
             </div>
           )}
-
+          {status === "authenticated" && (
+            <div className="flex flex-row items-center bg-primary w-[100%] py-[8px] px-[11px] rounded-[24px] text-white">
+              <div className="flex-grow">
+                <h2 className="font-medium text-base md:ml-3 md:mr-7 text-left">
+                  {userData.name}
+                </h2>
+              </div>
+              <button
+                onClick={() => signOut()}
+                className="bg-white text-black text-sm font-medium rounded-full px-[24px] py-[8px]"
+              >
+                Sign Out
+              </button>
+            </div>
+          )}
           <button
             onClick={toggleMobileMenu}
             className="flex items-center justify-center h-10 w-10 text-primary rounded-[99px] border-primary border-[1px] md:hidden"

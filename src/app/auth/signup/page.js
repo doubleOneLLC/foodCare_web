@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { LoginForm } from "./components/login-form";
 import Image from "next/image";
+import { SignUpForm } from "./components/signup-form";
 
-export default function LoginPage() {
+export default function SignUpPage() {
   return (
     <>
       <div className="container relative h-screen flex-col items-center justify-center grid lg:max-w-none lg:grid-cols-2 lg:px-0">
@@ -40,10 +40,10 @@ export default function LoginPage() {
         <div className="flex h-[100%] bg-white rounded-[32px] z-10 md:ml-[-32px] px-[32px] lg:p-8">
           <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[550px]">
             <div className="flex flex-col space-y-2 text-start ">
-              <h1 className="text-primary text-[32px] font-bold">Login</h1>
-              <p>Masukkan email dan password untuk autentikasi</p>
+              <h1 className="text-primary text-[32px] font-bold">Buat akun</h1>
+              <p>Masukkan email dan password untuk membuat akun</p>
             </div>
-            <LoginForm />
+            <SignUpForm />
             <p className="text-center">
               Dengan login kamu menyetujui{" "}
               <Link href="/terms" className="text-primary">
@@ -56,9 +56,9 @@ export default function LoginPage() {
               foodCare.
             </p>
             <p className="text-center">
-              Belum punya akun?{" "}
-              <Link href="/auth/signup" className="text-primary">
-                Buat akun
+              Sudah punya akun?{" "}
+              <Link href="/auth/login" className="text-primary">
+                Login aja
               </Link>
             </p>
           </div>
