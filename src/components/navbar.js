@@ -54,7 +54,7 @@ function Navbar({ active }) {
             </div>
           )}
           {status === "authenticated" && (
-            <div className="flex flex-row items-center bg-primary w-[100%] py-[8px] px-[11px] rounded-[24px] text-white">
+            <div className="hidden md:flex flex-row items-center bg-primary w-[100%] py-[8px] px-[11px] rounded-[24px] text-white">
               <div className="flex-grow">
                 <h2 className="font-medium text-base md:ml-3 md:mr-7 text-left">
                   {userData.name}
