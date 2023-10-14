@@ -74,7 +74,7 @@ function InputDetails() {
         </div>
       </div>
 
-      <Link href="/donate/money/status-waiting">
+      <Link href="/donate/food/track">
         <button className="middle none center w-full h-[60px] rounded-[99px] bg-[#F7921C] py-3 px-6 text-base font-semibold text-white shadow-md transition-all hover:shadow-lg hover:shadow-grey-400">
           Kirim Donasi
         </button>
