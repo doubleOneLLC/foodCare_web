@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import Avatar from "../../../../components/avatar";
-import Description from "../../../../components/description";
+import Description from "../components/description";
 import Target from "../components/target";
+import Avatar from "@/components/avatar";
 
 function DetailsDonate() {
   return (
     <div className="flex flex-col md:mb-6 md:w-[382px] rounded-[42px] md:shadow-lg px-[28px] gap-4">
       <h1 className="md:hidden text-black text-[24px] text-start font-bold">
-        Donasi Keuangan
+        Donasi Makanan
       </h1>
       <div className="w-[100%] h-[128px] rounded-2xl overflow-hidden">
         <Image
@@ -29,13 +29,11 @@ function DetailsDonate() {
             alt="banner"
           />
         </div>
-        <p className="text-zinc-900 font-bold">
-          Indonesia Merdeka Dari Kelaparan
-        </p>
+        <p className="text-zinc-900 font-bold">Donasi Makanan Desa Kami</p>
       </div>
-      <div className="flex flex-col w-[100%] h-[168px] bg-[#F5F6F8] rounded-[22px] p-3 gap-1">
+      <div className="flex flex-col w-[100%] h-[168px] bg-[#F5F6F8] rounded-[22px] p-6">
         <p className="text-zinc-900 text-sm font-semibold">
-          Anak Indonesia Harus Merdeka Kelaparan
+          Bantu Atasi Kelaparan Sekitar
         </p>
         <div className="flex flex-row h-[24px] justify-start items-center gap-3 ">
           <div className="flex flex-row h-[100%] w-max -space-x-2 ">
