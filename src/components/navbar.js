@@ -1,11 +1,13 @@
 "use client";
 
-import { jakarta } from "@/constant/fonts";
 import React, { useState } from "react";
 import MobileMenu from "./navbar-mobile";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
 
 function Navbar({ active }) {
+  const { status } = useSession();
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -23,18 +25,25 @@ function Navbar({ active }) {
           </span>
         </Link>
         <div className="flex md:order-2">
-          <button
-            type="button"
-            className="hidden md:inline text-primary font-medium rounded-[99px] border-primary border-[1px] text-sm px-[35px] py-2 mx-2 text-center mr-3 md:mr-0"
-          >
-            Daftar
-          </button>
-          <button
-            type="button"
-            className="text-white bg-primary font-medium rounded-[99px] text-sm px-[35px] py-2 mx-2 text-center"
-          >
-            Masuk
-          </button>
+          {status === "unauthenticated" && (
+            <div>
+              <button
+                type="button"
+                className="hidden md:inline text-primary font-medium rounded-[99px] border-primary border-[1px] text-sm px-[35px] py-2 mx-2 text-center mr-3 md:mr-0"
+              >
+                Daftar
+              </button>
+              <Link href="/auth/login">
+                <button
+                  type="button"
+                  className="text-white bg-primary font-medium rounded-[99px] text-sm px-[35px] py-2 mx-2 text-center"
+                >
+                  Masuk
+                </button>
+              </Link>
+            </div>
+          )}
+
           <button
             onClick={toggleMobileMenu}
             className="flex items-center justify-center h-10 w-10 text-primary rounded-[99px] border-primary border-[1px] md:hidden"

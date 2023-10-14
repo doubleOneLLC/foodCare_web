@@ -32,7 +32,7 @@ export const LoginForm = () => {
       if (res?.error) {
         setError("Invalid email or password");
       } else {
-        window.location.href = "/admin/dashboard";
+        window.location.href = "/";
       }
     } catch (error) {
       setLoading(false);

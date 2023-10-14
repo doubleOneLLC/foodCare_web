@@ -1,6 +1,5 @@
+import { apiBase, endAuth } from "@/constant/api";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { prisma } from "./prisma";
-import { compare } from "bcryptjs";
 
 export const authOptions = {
   secret: `${process.env.NEXTAUTH_SECRET}`,
@@ -18,7 +17,7 @@ export const authOptions = {
         email: {
           label: "Email",
           type: "email",
-          placeholder: "admin@xyzscape.xyz",
+          placeholder: "Masukkan email",
         },
         password: { label: "Password", type: "password" },
       },
@@ -27,30 +26,28 @@ export const authOptions = {
           return null;
         }
 
-        const user = await prisma.user.findUnique({
-          where: {
-            email: credentials.email,
-          },
-        });
+        try {
+          const formData = new URLSearchParams();
+          formData.append("email", credentials.email);
+          formData.append("password", credentials.password);
+          const response = await fetch(`${apiBase}${endAuth}/login`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: formData,
+          });
 
-        if (!user) {
-          return null;
+          if (!response.ok) {
+            throw new Error("Failed to fetch user from API");
+          }
+
+          const userData = await response.json();
+          return userData.data;
+        } catch (error) {
+          console.error("Error fetching user from API:", error);
+          throw new Error("Failed to fetch user from API");
         }
-
-        const isPasswordValid = await compare(
-          credentials.password,
-          user.password
-        );
-
-        if (!isPasswordValid) {
-          return null;
-        }
-
-        return {
-          id: user.id,
-          email: user.email,
-          name: user.name,
-        };
       },
     }),
   ],

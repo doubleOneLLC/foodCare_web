@@ -1,5 +1,6 @@
 import { inter, jakarta } from "@/constant/fonts";
 import "./globals.css";
+import { AuthProviders } from "@/context/SessionProvider.context";
 
 export const metadata = {
   title: "foodCare",
@@ -10,7 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={jakarta.className}>{children}</body>
+      <AuthProviders>
+        <body className={jakarta.className}>{children}</body>
+      </AuthProviders>
     </html>
   );
 }
