@@ -32,7 +32,7 @@ function Navbar({ active }) {
             <button
               type="button"
               onClick={() => signIn()}
-              className="hidden md:inline text-primary font-medium rounded-[99px] border-primary border-[1px] text-sm px-[35px] py-2 mx-2 text-center mr-3 hover:bg-primary hover:text-white md:mr-0"
+              className=" text-primary font-medium rounded-[99px] border-primary border-[1px] text-sm px-[35px] py-2 mx-2 text-center mr-3 hover:bg-primary hover:text-white md:mr-0"
             >
               Masuk
             </button>
