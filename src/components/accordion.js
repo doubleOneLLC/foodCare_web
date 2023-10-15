@@ -24,7 +24,7 @@ function Accordion({ title, summary }) {
           <span>{title}</span>
           <svg
             className={`w-3 h-3 shrink-0 ${
-              isHidden ? "" : "rotate-180"
+              isHidden ? "rotate-180" : ""
             } transition-all duration-150`}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
