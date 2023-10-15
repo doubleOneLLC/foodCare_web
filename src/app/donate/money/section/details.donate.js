@@ -38,7 +38,7 @@ function DetailsDonate() {
       </div>
       <div
         data-aos="fade-up"
-        className="flex flex-col w-[100%] h-[168px] bg-[#F5F6F8] rounded-[22px] p-3 gap-1"
+        className="flex flex-col w-[100%] h-[168px] bg-[#F5F6F8] rounded-[22px] p-6"
       >
         <p className="text-zinc-900 text-sm font-semibold">
           Anak Indonesia Harus Merdeka Kelaparan

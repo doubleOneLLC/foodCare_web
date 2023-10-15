@@ -26,22 +26,24 @@ export default function Footer() {
             </a>
             <div className="grid grid-cols-3 mt-8">
               <Image
+                className="w-[72px]"
                 src="/assets/images/kampusmerdeka.png"
-                width="65"
-                height="34"
+                width="172"
+                height="134"
                 alt="kampusmerdeka"
               />
               <Image
                 src="/assets/images/infinite.png"
-                width="131"
-                height="38"
+                width="292"
+                height="138"
                 className="ml-[-18px]"
                 alt="infinite"
               />
               <Image
                 src="/assets/images/doubleOne.png"
-                width="115"
-                height="20"
+                width="292"
+                height="120"
+                className="ml-[-12px]"
                 alt="doubleOne"
               />
             </div>
@@ -99,7 +101,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="max-w-[220px]">
+            <div className="max-w-[220px] mt-6 md:mt-0">
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Hubungi Kami
               </h2>
@@ -125,7 +127,10 @@ export default function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
-            <a href="" className="hover:underline">
+            <a
+              href="https://2022.lokreatif.org/berkas/kompetisi/pemenang/Desain_UI_UX/25.png"
+              className="hover:underline"
+            >
               doubleOne LLC, Simply™
             </a>
             . All Rights Reserved.

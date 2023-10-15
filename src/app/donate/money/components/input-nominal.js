@@ -12,7 +12,7 @@ const InputNominal = () => {
 
   return (
     <div className="p-6 rounded-[32px] w-[100%] flex flex-col justify-between bg-gray-50">
-      <p className="md:mb-3">Masukkan Nominal</p>
+      <p className="md:mb-3 font-medium">Masukkan Nominal</p>
       <div className="inline w-auto">
         <input
           type="text"
