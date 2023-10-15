@@ -3,12 +3,22 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-function DonateMoneyItem({ img, program, instance, acc, target, verified }) {
+function DonateMoneyItem({
+  img,
+  program,
+  instance,
+  acc,
+  target,
+  verified,
+  animate,
+}) {
   return (
     <Link href="/donate/money">
       <div
         data-aos="fade-up"
-        className="min-w-[250px] bg-white rounded-2xl shadow-md overflow-hidden"
+        className={`min-w-[250px] bg-white rounded-2xl shadow-md overflow-hidden ${
+          animate ? "animate-slide-card" : ""
+        }`}
       >
         <Image
           className=" object-cover h-[134px] w-[100%] hover:scale-105 transition-all duration-150"

@@ -10,6 +10,7 @@ function DonateSection() {
         {donateMoneyList.map((item) => (
           <DonateItem
             key={item.id}
+            animate="true"
             img={item.img}
             program={item.program}
             instance={item.instance}

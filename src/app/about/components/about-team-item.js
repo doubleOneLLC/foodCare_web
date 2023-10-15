@@ -12,7 +12,7 @@ function AboutTeamItem({ img, name, role, univ }) {
         width="200"
         height="195"
         src={img}
-        className="z-10"
+        className="z-10 "
         alt="team"
       />
       <div className="flex flex-col justify-end items-center w-[100%] md:w-[260px] h-[252px] bg-white rounded-[24px] shadow-md p-2 mt-[-92px]">
