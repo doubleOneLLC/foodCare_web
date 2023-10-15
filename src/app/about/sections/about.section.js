@@ -6,7 +6,7 @@ function AboutSection() {
   return (
     <>
       <AboutHeader />
-      <div className="flex justify-center items-center">
+      <div data-aos="fade-up" className="flex justify-center items-center">
         <div className="grid md:grid-cols-3 items-center gap-8 mx-[32px] mt-[-100px] md:mt-[0px]">
           <AboutItem
             img="/assets/images/wallet_ill.png"

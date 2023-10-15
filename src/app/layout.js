@@ -1,9 +1,6 @@
-import { inter, jakarta } from "@/constant/fonts";
+import { jakarta } from "@/constant/fonts";
 import "./globals.css";
 import { AuthProviders } from "@/context/SessionProvider.context";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
-
 export const metadata = {
   title: "foodCare",
   description:

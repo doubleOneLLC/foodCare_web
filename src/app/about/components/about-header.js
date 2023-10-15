@@ -3,12 +3,18 @@ import React from "react";
 
 function AboutHeader() {
   return (
-    <div className="flex flex-col-reverse md:flex-row bg-primary md:justify-between items-center w-[100%] my-[32px] px-[32px] md:px-[62px] py-[42px] pb-[100px] pt-[92px] mr-[18px] md:mx-0 rounded-[42px]">
+    <div
+      data-aos="fade-up"
+      className="flex flex-col-reverse md:flex-row bg-primary md:justify-between items-center w-[100%] my-[32px] px-[32px] md:px-[62px] py-[42px] pb-[100px] pt-[92px] mr-[18px] md:mx-0 rounded-[42px]"
+    >
       <div>
-        <h1 className={`text-white text-4xl font-extrabold mb-2`}>
+        <h1
+          data-aos="fade-up"
+          className={`text-white text-4xl font-extrabold mb-2`}
+        >
           Tentang foodCare
         </h1>
-        <p className="text-white font-medium pr-42">
+        <p data-aos="fade-up" className="text-white font-medium pr-42">
           foodCare merupakan situs web yang dibuat khusus untuk berdonasi
           makanan atau uang bagi masyarakat yang memiliki kemampuan finansial
           terbatas. Food care bekerja untuk membantu para donatur yang ingin
@@ -19,6 +25,7 @@ function AboutHeader() {
         </p>
       </div>
       <Image
+        data-aos="fade-up"
         src="/assets/svgs/foodcare_logo.svg"
         height="303"
         width="303"

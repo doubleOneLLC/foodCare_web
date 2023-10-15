@@ -11,8 +11,9 @@ function Accordion({ title, summary }) {
 
   return (
     <div
-      id="accordion-collapse"
-      className={`rounded-[20px] ${isHidden ? "" : "shadow-lg mb-6"}`}
+      className={`rounded-[20px] ${
+        isHidden ? "" : "shadow-lg mb-6"
+      } transition-all duration-150 `}
     >
       <h2>
         <button
@@ -22,10 +23,9 @@ function Accordion({ title, summary }) {
         >
           <span>{title}</span>
           <svg
-            data-accordion-icon
-            className={`w-3 h-3 rotate-180 shrink-0 ${
+            className={`w-3 h-3 shrink-0 ${
               isHidden ? "" : "rotate-180"
-            }`}
+            } transition-all duration-150`}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

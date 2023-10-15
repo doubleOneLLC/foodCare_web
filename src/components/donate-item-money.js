@@ -6,9 +6,12 @@ import React from "react";
 function DonateMoneyItem({ img, program, instance, acc, target, verified }) {
   return (
     <Link href="/donate/money">
-      <div className="min-w-[250px] bg-white rounded-2xl shadow-md">
+      <div
+        data-aos="fade-up"
+        className="min-w-[250px] bg-white rounded-2xl shadow-md overflow-hidden"
+      >
         <Image
-          className="rounded-2xl object-cover h-[134px] w-[100%]"
+          className=" object-cover h-[134px] w-[100%] hover:scale-105 transition-all duration-150"
           width="250"
           height="134"
           src={img}

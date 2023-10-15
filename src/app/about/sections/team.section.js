@@ -21,7 +21,7 @@ function TeamSection() {
     fetchData();
   }, []);
   return (
-    <div className="my-[62px]">
+    <div data-aos="fade-up" className="my-[62px]">
       <h1 className="font-bold text-4xl text-center">Tim Kita</h1>
       <div className="grid md:grid-flow-col py-6 px-6 gap-6 md:overflow-x-scroll">
         {teamData.map((item) => (

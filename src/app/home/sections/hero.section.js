@@ -5,7 +5,10 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <div className="container mt-32 flex flex-col justify-center items-center">
+    <div
+      data-aos="fade-up"
+      className="container mt-32 flex flex-col justify-center items-center"
+    >
       <div className="flex flex-col justify-center items-start h-[80vh] md:h-[40vh] px-[32px] md:flex-row md:items-center">
         <Image
           className="w-[114px] md:w-[233px] md:h-[201px]"
@@ -14,7 +17,7 @@ function HeroSection() {
           alt="foodCare"
           src="assets/svgs/foodcare_logo.svg"
         />
-        <div className="md:ml-[100px]">
+        <div data-aos="fade-right" className="md:ml-[100px] ">
           <h1
             className={`mb-4 text-4xl font-extrabold leading-none tracking-tight text-primary text-[72px] pt-8 pr-20 md:pt-0 md:text-5xl `}
           >
@@ -31,7 +34,10 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="grid gap-[32px] md:grid-cols-3 bg-primary justify-center items-center md:h-[271px] w-[100%] my-[18px] py-20 pb-[180px] md:px-[42px] rounded-[42px]">
+      <div
+        data-aos="zoom-in-up"
+        className="grid gap-[32px] md:grid-cols-3 bg-primary justify-center items-center md:h-[271px] w-[100%] my-[18px] py-20 pb-[180px] md:px-[42px] rounded-[42px]"
+      >
         <div className="flex flex-col items-center md:mt-[-42px]">
           <h5 className="mb-4 text-xl font-semibold leading-none tracking-tight text-white">
             Program Donasi
@@ -54,7 +60,10 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="flex flex-col bg-white justify-center items-center mx-[24px] md:mx-[42px] mt-[-150px] rounded-[42px] shadow-xl p-[32px] py-[42px] md:p-[52px]">
+      <div
+        data-aos="zoom-in-up"
+        className="flex flex-col bg-white justify-center items-center mx-[24px] md:mx-[42px] mt-[-150px] rounded-[42px] shadow-xl p-[32px] py-[42px] md:p-[52px]"
+      >
         <div className="flex flex-col md:flex-row items-center">
           <h5
             className={`text-4xl font-extrabold leading-none tracking-tight text-primary `}

@@ -5,7 +5,10 @@ import React from "react";
 function DonateActiveItem({ img, program, summary }) {
   return (
     <Link href="/donate/food/track">
-      <div className="w-[100%] bg-white shadow-xl rounded-[32px] mb-6">
+      <div
+        data-aos="fade-up"
+        className="w-[100%] bg-white shadow-xl rounded-[32px] mb-6"
+      >
         <div className="flex flex-row p-[22px] align-middle items-center">
           <div className="min-h-[67px] min-w-[67px] rounded-full overflow-hidden">
             <Image

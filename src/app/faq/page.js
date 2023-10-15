@@ -1,12 +1,23 @@
+"use client";
+
 import Accordion from "@/components/accordion";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="container max-w-screen-xl mt-32 mb-8 px-8">
+      <div
+        data-aos="fade-up"
+        className="container max-w-screen-xl mt-32 mb-8 px-8"
+      >
         <div className="gap-12 grid md:grid-cols-2">
           <div>
             <h1 className="font-bold text-3xl mb-4">Pertanyaan umum</h1>
@@ -29,7 +40,7 @@ export default function Home() {
             <h1 className="font-bold text-3xl mb-8">
               Masih belum menemukan jawaban?
             </h1>
-            <div className="grid gap-4">
+            <div data-aos="fade-up" className="grid gap-4">
               <div>
                 <label
                   for="full_name"
