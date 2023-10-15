@@ -9,7 +9,7 @@ function ChatModal({ isOpen, onClose }) {
       } flex h-screen w-screen fixed justify-center items-center`}
     >
       <div
-        className={` bg-white rounded-[32px] h-fit m-[18px] p-4 shadow-2xl ${
+        className={` bg-white rounded-[32px] p-4 shadow-2xl ${
           isOpen ? "" : "hidden"
         }  `}
       >
@@ -29,7 +29,7 @@ function ChatModal({ isOpen, onClose }) {
           <div
             id="chat-container"
             data-aos="zoom-in-right"
-            className="h-[550px] overflow-x-hidden overflow-y-auto px-6"
+            className="max-h-[400px] overflow-x-hidden overflow-y-auto px-6"
           >
             <ChatBubbles
               from="in"
