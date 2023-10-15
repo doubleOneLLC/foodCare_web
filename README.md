@@ -1,34 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img width="1920" alt="foodcare" src="https://github.com/doubleOneLLC/foodCare_web/assets/57469823/6c92dd27-e34d-40da-abd1-4e8c2f0adb1e">
 
-## Getting Started
+# foodCare
+foodCare adalah website untuk membantu para donatur yang ingin menyumbangkan makanan berlebih mereka secara sukarela kepada masyarakat yang membutuhkan makanan yang cukup sebagai sumber protein dan nutrisi harian mereka.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Technologies](#technologies)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Donasi Makanan:** Kamu dapat melakukan donasi makanan berlebih kepada mereka yang membutuhkan.
+- **Donasi Terdekat:** Kita dapat berbagi makanan berlebih di daerah terdekat mu.
+- **Donasi dengan pengiriman:** Tidak perlu khawatir, di foodCare donasi kamu dapat di antar melalui kurir.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Demo
 
-## Learn More
+Check out the live demo at [https://foodcare.xyzuan.my.id](https://foodcare.xyzuan.my.id).
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone this repository to your local machine using:
+   ```bash
+   git clone https://github.com/doubleOneLLC/foodCare_web
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd foodCare_web
+   ```
+3. Install the dependencies using your preferred package manager:
+   ```bash
+   bun install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+4. Run or build the project:
+   ```bash
+   bun dev
+   # or
+   npm run dev
+   # or
+   yarn run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Technologies
 
-## Deploy on Vercel
+- Next.js
+- React
+- TailwindCSS
+- Flowbite
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This repository is licensed under the MIT license. See [LICENSE]() for details.
+
+##
