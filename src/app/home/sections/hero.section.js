@@ -1,5 +1,6 @@
 import { jakarta } from "@/constant/fonts";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function HeroSection() {
@@ -22,12 +23,11 @@ function HeroSection() {
           <p className="mb-6 text-lg font-normal text-black">
             Anak Indonesia Harus Merdeka Kelaparan
           </p>
-          <a
-            href="/donate"
-            className="inline-flex items-center justify-center px-[37px] py-[13px] text-lg font-extrabold text-center text-white bg-primary rounded-[99px]"
-          >
-            Mulai Donasi
-          </a>
+          <Link href="/donate">
+            <div className="inline-flex items-center justify-center px-[37px] py-[13px] text-lg font-extrabold text-center text-white bg-primary rounded-[99px]">
+              Mulai Donasi
+            </div>
+          </Link>
         </div>
       </div>
 
