@@ -3,7 +3,10 @@ import React from "react";
 function Target() {
   return (
     <>
-      <div className="flex flex-col w-[90%] h-[122px] bg-[#F7921C] rounded-xl py-4 px-4 gap-5">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col w-[90%] h-[122px] bg-[#F7921C] rounded-xl py-4 px-4 gap-5"
+      >
         <div className="flex flex-row justify-between items-center gap-3  w-[100%]">
           <div className=" bg-[#FFCE95] rounded-full h-1.5 w-[60%]">
             <div className="w-[45%] bg-white h-1.5 rounded-full"></div>

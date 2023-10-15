@@ -1,15 +1,28 @@
+"use client";
+
 import ChatBubbles from "@/components/chat-bubbles";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import React from "react";
 
-function TrackFood() {
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+export default function TrackFood() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
       <Navbar />
-      <div className="container flex flex-col md:flex-row max-w-screen-xl max-h-[744px] my-16 px-[32px] mt-24">
-        <div className="flex align-middle justify-center relative overflow-hidden min-w-[550px] rounded-[32px]">
+      <div
+        data-aos="fade-up"
+        className="container flex flex-col md:flex-row max-w-screen-xl md:max-h-[744px] my-16 px-[32px] mt-24"
+      >
+        <div className="flex align-middle justify-center relative overflow-hidden md:min-h-0 min-h-screen md:min-w-[550px] rounded-[32px]">
           <Image
             className="object-cover"
             height="744"
@@ -17,7 +30,10 @@ function TrackFood() {
             alt="maps"
             src="/assets/images/track_map.png"
           />
-          <div className="flex flex-col absolute bottom-0 w-[90%] mb-[32px] p-[32px] rounded-[32px] bg-white">
+          <div
+            data-aos="zoom-in-up"
+            className="flex flex-col absolute bottom-0 m-[18px] md:m-0 md:w-[90%] md:mb-[32px] p-[32px] rounded-[32px] bg-white"
+          >
             <div className="flex flex-row justify-evenly">
               <div className="flex flex-col gap-2 mr-3">
                 <div className="h-[42px] w-[42px] bg-black rounded-full"></div>
@@ -78,11 +94,15 @@ function TrackFood() {
           </div>
         </div>
 
-        <div className="w-full m-[32px]">
+        <div className="w-full mt-[32px] md:mt-0 md:m-[32px]">
           <div id="header" className="p-[18px]">
             <h1 className="font-semibold text-2xl">Live chat</h1>
           </div>
-          <div id="chat-container" className="overflow-y-auto h-[84%] px-6">
+          <div
+            id="chat-container"
+            data-aos="zoom-in-right"
+            className="overflow-x-hidden overflow-y-auto h-[84%] px-6"
+          >
             <ChatBubbles
               from="in"
               msg="Halo mas, untuk posisi nya apakah
@@ -188,5 +208,3 @@ sudah sesuai ?"
     </>
   );
 }
-
-export default TrackFood;

@@ -15,10 +15,10 @@ function MoreText() {
 }
 function Description() {
   return (
-    <div className="px-3">
+    <div className="px-3 transition-all duration-150">
       <p
         id="description"
-        className="text-black text-sm font-normal line-clamp-5 text-justify"
+        className="text-black text-sm font-normal line-clamp-5 text-justify transition-all duration-150"
       >
         Memperingati 75 tahun kemerdekaan Republik Indonesia, bangsa ini masih
         terus berjuang mengatasi persoalan kelaparan, khususnya pada balita yang
@@ -29,7 +29,7 @@ function Description() {
       </p>
       <a
         id="readMore"
-        className="text-[#F7921C] text-sm font-semibold hover:cursor-pointer"
+        className="text-[#F7921C] text-sm font-semibold hover:cursor-pointer transition-all duration-150"
         onClick={MoreText}
       >
         baca selengkapanya...
