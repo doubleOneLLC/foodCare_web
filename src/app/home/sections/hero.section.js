@@ -1,9 +1,61 @@
 import { jakarta } from "@/constant/fonts";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function HeroSection() {
+  const [totalDonation, setTotalDonation] = useState(0);
+  const [totalProgram, setTotalProgram] = useState(0);
+  const [totalRegister, setTotalRegister] = useState(0);
+  const stopValue = 31462218610;
+  const stopTotalProgram = 32;
+  const stopTotalRegister = 47672;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const incrementValue = Math.floor(Math.random() * 112946834);
+
+      if (totalDonation + incrementValue >= stopValue) {
+        setTotalDonation(stopValue);
+        clearInterval(interval);
+      } else {
+        setTotalDonation((prevCounter) => prevCounter + incrementValue);
+      }
+    });
+
+    return () => clearInterval(interval);
+  }, [totalDonation, stopValue]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const incrementValue = 1;
+
+      if (totalProgram + incrementValue >= stopTotalProgram) {
+        setTotalProgram(stopTotalProgram);
+        clearInterval(interval);
+      } else {
+        setTotalProgram((prevCounter) => prevCounter + incrementValue);
+      }
+    }, 60);
+
+    return () => clearInterval(interval);
+  }, [totalProgram, stopTotalProgram]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const incrementValue = Math.floor(Math.random() * 200);
+
+      if (totalRegister + incrementValue >= stopTotalRegister) {
+        setTotalRegister(stopTotalRegister);
+        clearInterval(interval);
+      } else {
+        setTotalRegister((prevCounter) => prevCounter + incrementValue);
+      }
+    });
+
+    return () => clearInterval(interval);
+  }, [totalRegister, stopTotalRegister]);
+
   return (
     <div
       data-aos="fade-up"
@@ -42,21 +94,22 @@ function HeroSection() {
           <h5 className="mb-4 text-xl font-semibold leading-none tracking-tight text-white">
             Program Donasi
           </h5>
-          <p className="text-white text-3xl font-extrabold">32</p>
+          <p className="text-white text-3xl font-extrabold">{totalProgram}</p>
         </div>
         <div className="flex flex-col items-center md:mt-[-42px]">
           <h5 className="mb-4 text-xl font-semibold leading-none tracking-tight text-white">
             Total Dana Terkumpul
           </h5>
           <p className="text-white text-3xl font-extrabold">
-            Rp 31.462.218.610
+            {"Rp "}
+            {totalDonation.toLocaleString("id-ID")}
           </p>
         </div>
         <div className="flex flex-col items-center md:mt-[-42px]">
           <h5 className="mb-4 text-xl font-semibold leading-none tracking-tight text-white">
             Donatur Terdaftar
           </h5>
-          <p className="text-white text-3xl font-extrabold">47672</p>
+          <p className="text-white text-3xl font-extrabold">{totalRegister}</p>
         </div>
       </div>
 
