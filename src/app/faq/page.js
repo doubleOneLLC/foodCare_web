@@ -52,7 +52,7 @@ export default function Home() {
                   type="text"
                   id="full_name"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-                  placeholder="Masukkan nama lengkap"
+                  placeholder="Masukkan nama lengkap anda"
                   required
                 />
               </div>
@@ -67,7 +67,7 @@ export default function Home() {
                   type="text"
                   id="email"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-                  placeholder="Masukkan email"
+                  placeholder="Masukkan alamat email anda"
                   required
                 />
               </div>
@@ -96,8 +96,9 @@ export default function Home() {
                 <textarea
                   type="text"
                   id="message"
+                  rows="6"
                   className="block w-full resize-none p-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-                  placeholder="Masukkan pesanmu disini"
+                  placeholder="Masukkan pertanyaan atau keluhan disini"
                   required
                 />
               </div>

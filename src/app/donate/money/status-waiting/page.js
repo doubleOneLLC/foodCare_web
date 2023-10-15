@@ -9,7 +9,10 @@ export default function StatusWaiting() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto h-fit flex flex-row justify-center items-center gap-[78px] my-24">
+      <div
+        data-aos="fade-up"
+        className="container mx-auto h-fit flex flex-row justify-center items-center gap-[78px] my-24"
+      >
         <div className="md:inline hidden">
           <DetailsDonate />
         </div>

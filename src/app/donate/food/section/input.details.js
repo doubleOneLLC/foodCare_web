@@ -8,38 +8,46 @@ function InputDetails() {
     <div className="flex flex-col gap-6">
       <div className="grid md:grid-cols-2 gap-4 w-[100%]"></div>
       <div>
-        <label for="food">Nama Makanan</label>
+        <label className="font-medium" for="food">
+          Nama Makanan
+        </label>
         <input
           type="text"
           id="food"
           className="mt-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-          placeholder="Nama Makanan"
+          placeholder="Masukkan Nama Makanan"
         />
       </div>
 
       <div className="flex w-[100%] flex-col md:flex-row items-end gap-6">
         <div className="w-[100%]">
-          <label for="pick">Tempat Pengambilan</label>
+          <label className="font-medium" for="pick">
+            Tempat Pengambilan
+          </label>
           <textarea
             id="pick"
             rows="4"
             className="mt-2 block resize-none w-full p-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-            placeholder="Masukkan Tempat Pengambilan"
+            placeholder="Masukkan lokasi pengambilan makanan"
           ></textarea>
         </div>
 
         <div className="w-[100%]">
-          <label for="pick">Tempat Penjemputan</label>
+          <label className="font-medium" for="pick">
+            Tempat Penjemputan
+          </label>
           <textarea
             id="pick"
             rows="4"
             className="mt-2 block resize-none w-full p-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-[20px] focus:ring-primary focus:border-primary dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary dark:focus:border-primary"
-            placeholder="Masukkan Tempat Penjemputan"
+            placeholder="Masukkan lokasi penjemputan makanan"
           ></textarea>
         </div>
       </div>
       <div className="flex flex-col">
-        <label for="tglDonasi">Batas Tanggal Donasi</label>
+        <label className="font-medium" for="tglDonasi">
+          Batas Tanggal Donasi
+        </label>
         <input
           type="date"
           id="tglDonasi"
@@ -48,7 +56,9 @@ function InputDetails() {
         />
       </div>
       <div className="flex flex-col">
-        <label for="foodval">Kuantitas</label>
+        <label className="font-medium" for="foodval">
+          Kuantitas
+        </label>
         <input
           id="minmax-range"
           type="range"
@@ -58,7 +68,7 @@ function InputDetails() {
         />
       </div>
       <div>
-        <label className="text-ellipsi">Foto Makanan</label>
+        <label className="font-medium">Foto Makanan</label>
         <div className="grid grid-cols-3 w-fit gap-3">
           <FoodItem
             img={

@@ -6,7 +6,10 @@ import Target from "../components/target";
 
 function DetailsDonate() {
   return (
-    <div className="flex flex-col md:mb-6 md:w-[382px] rounded-[42px] md:shadow-lg px-[28px] gap-4">
+    <div
+      data-aos="fade-up"
+      className="flex flex-col md:mb-6 md:w-[382px] rounded-[42px] md:shadow-lg px-[28px] gap-4"
+    >
       <h1 className="md:hidden text-black text-[24px] text-start font-bold">
         Donasi Keuangan
       </h1>
@@ -33,7 +36,10 @@ function DetailsDonate() {
           Indonesia Merdeka Dari Kelaparan
         </p>
       </div>
-      <div className="flex flex-col w-[100%] h-[168px] bg-[#F5F6F8] rounded-[22px] p-3 gap-1">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col w-[100%] h-[168px] bg-[#F5F6F8] rounded-[22px] p-3 gap-1"
+      >
         <p className="text-zinc-900 text-sm font-semibold">
           Anak Indonesia Harus Merdeka Kelaparan
         </p>
@@ -48,7 +54,10 @@ function DetailsDonate() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col h-auto mt-[-100px] gap-4 items-center">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col h-auto mt-[-100px] gap-4 items-center"
+      >
         <Target />
         <Description />
         <div className="w-[100%] h-[160] rounded-xl overflow-hidden">
