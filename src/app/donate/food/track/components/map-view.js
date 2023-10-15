@@ -17,7 +17,14 @@ function MapView({ openModal }) {
       >
         <div className="flex flex-row justify-evenly">
           <div className="flex flex-col gap-2 mr-3">
-            <div className="h-[42px] w-[42px] bg-black rounded-full"></div>
+            <div className="h-[42px] w-[42px] rounded-full overflow-clip">
+              <Image
+                width="42"
+                height="42"
+                alt="kurir"
+                src="https://avatars.githubusercontent.com/u/57469823?v=4"
+              />
+            </div>
             <div>
               <h2 className="font-bold">Jody Yuantoro</h2>
               <p className="font-semibold text-xs text-gray-500">Kurir</p>

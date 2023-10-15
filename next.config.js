@@ -4,6 +4,10 @@ const nextConfig = {};
 module.exports = nextConfig;
 module.exports = {
   images: {
-    domains: ["api.xyzuan.my.id", "images.unsplash.com"],
+    domains: [
+      "api.xyzuan.my.id",
+      "images.unsplash.com",
+      "avatars.githubusercontent.com",
+    ],
   },
 };
