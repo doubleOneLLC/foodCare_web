@@ -41,7 +41,7 @@ function DetailsDonate() {
         className="flex flex-col w-[100%] h-[168px] bg-[#F5F6F8] rounded-[22px] p-6"
       >
         <p className="text-zinc-900 text-sm font-semibold">
-          Anak Indonesia Harus Merdeka Kelaparan
+          Anak Indonesia Merdeka Kelaparan
         </p>
         <div className="flex flex-row h-[24px] justify-start items-center gap-3 ">
           <div className="flex flex-row h-[100%] w-max -space-x-2 ">

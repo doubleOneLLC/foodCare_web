@@ -60,10 +60,10 @@ function DetailsDonate() {
         <Description />
         <div className="w-[100%] h-[160] rounded-xl overflow-hidden">
           <Image
-            className="object-cover w-full h-full"
             src="/assets/images/googlemaps.png"
-            height="160"
-            width="300"
+            className="object-cover w-full h-full"
+            height="298"
+            width="400"
             alt="map"
           />
         </div>
